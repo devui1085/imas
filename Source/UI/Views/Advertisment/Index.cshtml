@@ -1,0 +1,180 @@
+﻿@using IMAS.Common.ExtensionMethod
+@using IMAS.Common.Globalization
+@model IMAS.UI.ViewModels.AdvertismentViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@{
+    ViewBag.Title = Model.Advertisment.Title;
+    var baseUrl = "http://tahacnc.com";
+    var pageUrl = string.Format("{0}/advertisment/{1}", baseUrl, Model.Advertisment.Id);
+
+}
+
+@Html.HiddenFor(model => model.Advertisment.Id, new { id = "AdvertismentId" })
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-6">
+            <ul class="list-unstyled profile-nav">
+                <li>
+                    <img src='@("/AdImages/Pic400x250/"+ (Model.Pictures.FirstOrDefault() ?? "default") +".png")' class="img-responsive pic-bordered" alt="تصویر آگهی">
+                </li>
+            </ul>
+                <div class="margin-top-10 text-align-center">
+                </div>
+
+            <div class="portlet light margin-top-10 padding-5px">
+            </div>
+
+        </div>
+        <div class="col-md-6">
+            <div class="row margin-top-10">
+                <div class="col-md-8 profile-info">
+                    <h1 class="font-blue-chambray number-fa">@Model.Advertisment.Title</h1>
+                        <p>@Model.Advertisment.Comment</p>
+                    <p>
+                        (@Model.Advertisment.TypeIdentityLocalized)
+                    </p>
+                    <h3 class="font-blue-chambray number-fa">
+                         @string.Format("{0:n0}", Model.Advertisment.Price) تومان
+                    </h3>
+                    <ul class="list-inline">
+                        <li title="تاریخ ثبت">
+                            <i class="fa fa-calendar"></i>
+                            <span class="number-fa">@Model.Advertisment.RegisterDateString</span>
+                        </li>
+                        <li title="تعداد بازدید">
+                            <i class="icon-eye"></i><span class="number-fa">@Model.TotalVisits</span>
+                        </li>
+                    </ul>
+                </div>
+                <!--end col-md-8-->
+                <div class="col-md-4">
+                    <div class="actions">
+                        <div class="btn-group">
+                            <a class="btn btn-link font-red-flamingo" href="javascript:;" data-toggle="dropdown" aria-expanded="false">
+                                <i class="fa fa-share-alt md-skip"></i> اشتراک گذاری
+                                <i class="fa fa-angle-down "></i>
+                            </a>
+                            <ul class="dropdown-menu pull-right">
+                                <li>
+                                    <a href="https://telegram.me/share/url?url=@pageUrl&text=@Model.Advertisment.Title" rel="nofollow" target="_blank">
+                                        <i class="fa fa-paper-plane"></i> تلگرام
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://www.linkedin.com/shareArticle?mini=true&url=@pageUrl&title=@Model.Advertisment.Title" rel="nofollow" target="_blank">
+                                        <i class="fa fa-linkedin"></i> لینکدین
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://twitter.com/share?text=@Model.Advertisment.Title&url=@pageUrl" rel="nofollow" target="_blank">
+                                        <i class="fa fa-twitter"></i> توییتر
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.facebook.com/sharer.php?u=@pageUrl&t=@Model.Advertisment.Title" rel="nofollow" target="_blank">
+                                        <i class="fa fa-facebook"></i> فیسبوک
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!--end col-md-4-->
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="tabbable-line">
+                <ul class="nav nav-tabs ">
+                    <li class="active">
+                        <a href="#tab_15_1" data-toggle="tab" aria-expanded="true"> مشخصات کلی </a>
+                    </li>
+                    @if (Model.Advertisment.TypeIdentity != "Machinery")
+                    {
+                    <li class="">
+                        <a href="#tab_15_2" data-toggle="tab" aria-expanded="false"> مشخصات فنی </a>
+                    </li>
+                    }
+                    <li class="">
+                        <a href="#tab_15_3" data-toggle="tab" aria-expanded="false"> تصاویر </a>
+                    </li>
+                    <li class="">
+                        <a href="#tab_15_4" data-toggle="tab" aria-expanded="false"> اطلاعات تماس </a>
+                    </li>
+                    <li class="">
+                        <a href="#tab_15_5" data-toggle="tab" aria-expanded="false"> آمار </a>
+                    </li>
+                </ul>
+                <div class="tab-content">
+                    <div class="tab-pane active" id="tab_15_1">
+                        @Html.Partial("Machinery",Model.Advertisment)
+                    </div>
+                    @if (Model.Advertisment.TypeIdentity != "Machinery")
+                    {
+                    <div class="tab-pane" id="tab_15_2">
+                        @Html.Partial(Model.Advertisment.TypeIdentity, Model.Advertisment)
+                    </div>
+                    }
+                    <div class="tab-pane" id="tab_15_3">
+                        @Html.Partial("Pictures", Model.Pictures)
+                    </div>
+                    <div class="tab-pane" id="tab_15_4">
+                         @Html.Partial("ContactInfo", Model.ContactInfo)
+                    </div>
+                    <div class="tab-pane" id="tab_15_5">
+                         @Html.Partial("Statistic")
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+@section head {
+    <!-- JSON-LD markup generated by Google Structured Data Markup Helper. -->
+<script type="application/ld+json">
+    {
+    "@@context" : "http://schema.org",
+    "@@type" : "Product",
+    "name" : "@Model.Advertisment.Title",
+    "image" : "@("http://tahacnc.com/AdImages/Pic400x250/" + (Model.Pictures.FirstOrDefault() ?? "default") + ".png")",
+    "description" : "@Model.Advertisment.Comment",
+    "url" : "http://tahacnc.com/advertisment/@Model.Advertisment.Id",
+    "offers" : {
+    "@@type" : "Offer",
+    "price" : "@string.Format("{0:n0}", Model.Advertisment.Price) تومان"
+    }
+    }
+</script>
+
+    <meta name="description" content="@(string.IsNullOrWhiteSpace(Model.Advertisment.Comment) ?  Model.Advertisment.Title : Model.Advertisment.Comment)" />
+   @Styles.Render("~/visitor-area-advertisment-page-styles")
+
+<meta name="description" content="@Model.Advertisment.Comment" />
+<meta name="keywords" content="@Model.Advertisment.Title.Split(' ')">
+@*<meta name="author" content="@Model.Advertisment..AuthorFullName">*@
+<meta property="og:url" content="@baseUrl@Url.Action("index", "advertisment", new { id = Model.Advertisment.Id})" />
+<meta property="og:type" content="article" />
+<meta property="og:title" content="@Model.Advertisment.Title" />
+<meta property="og:description" content="@Model.Advertisment.Comment" />
+<meta property="og:image:width" content="400" />
+<meta property="og:image:height" content="250" />
+<meta property="og:image" content="@baseUrl/AdImages/Pic400x250/@((Model.Pictures.FirstOrDefault() ?? "default") + ".png")" />
+@*<meta property="og:locale" content="" />*@
+<meta property="og:site_name" content="طاها سی ان سی" />
+<meta name="twitter:card" content="@Model.Advertisment.Comment" />
+<meta name="twitter:title" content="@Model.Advertisment.Title" />
+<meta name="twitter:description" content="@Model.Advertisment.Comment" />
+<meta name="twitter:image" content="@baseUrl/AdImages/Pic400x250/@((Model.Pictures.FirstOrDefault() ?? "default") + ".png")" />
+}
+
+@section PageScripts {
+    @Scripts.Render("~/visitor-area-advertisment-scripts")
+}
+
+@section ComponentScripts {
+}

@@ -1,0 +1,158 @@
+﻿@using IMAS.Common.ExtensionMethod
+@using IMAS.UI.Infrastructure.Mvc.GlobalViewModel
+@model IMAS.UI.ViewModels.Search.SearchViewModel
+@{
+    ViewBag.Title = string.Format("جستجو", Model.PageIndex);
+    var paginationViewModel = new PaginationViewModel() {
+        PageSize = Model.PageSize,
+        SelectedPage = Model.PageIndex,
+        TotalRows = Model.TotallRows,
+        VisiblePreviousPages = 3,
+        VisibleNextPages = 3,
+        UrlTemplate = "/directory/articles/{PageIndex}"
+    };
+}
+<br />
+<br />
+@if (Model.Advertisments == null)
+{
+    <div class="note note-danger line-height-30">
+        <p>حداقل یک فیلتر انتخاب کنید،</p>
+        <p>حداقل طول عنوان باید دو کاراکتر باشد.</p>
+    </div>
+}
+else if (Model.Advertisments.Any())
+{
+    <div >
+        <div id="advertisments" class="row list-group">
+            @foreach (var advertisment in Model.Advertisments)
+            {
+                <div class="item  col-sm-4 ">
+                    <div class="thumbnail">
+                        <img class="group list-group-image" src='@("/AdImages/Pic400x250/" + (advertisment.FistImageName ?? "default")+ ".png")' alt="" />
+                        <div class="caption number-fa">
+                            <h4 class="group inner list-group-item-heading">
+                                @advertisment.Title
+                            </h4>
+                            <h5 class="group inner list-group-item-text">
+                                @advertisment.RegisterDateString
+                            </h5>
+
+                            <div class="row">
+                                <div class="col-xs-12 col-md-6">
+                                    <p class="lead">
+                                        @*@(((IMAS.PresentationModel.Model.Advertisment.MachineryPM)advertisment).Price)*@
+                                    </p>
+                                </div>
+                                <div class="col-sm-12">
+                                    <a class="btn btn-primary btn-lg btn-block" href="~/advertisment/@advertisment.Id">مشاهده آگهی</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+
+    </div>
+}
+else
+{
+    <div class="note note-danger line-height-30" >
+        <p>آگهی مورد نظر شما پیدا نشد</p>
+    </div>
+}
+
+@*<div>
+    @Html.Partial("_pagination", paginationViewModel)
+</div>*@
+
+@section head {
+    <meta name="description" content="آگهی های منتشر شده در  طاها سی ان سی - صفحه @Model.PageIndex" />
+}
+
+@section PageBreadcrumb {
+    @*<ul class="page-breadcrumb breadcrumb">
+            <li>
+                <a href="index.html">برچسب ها</a>
+                <i class="fa fa-angle-left"></i>
+            </li>
+            <li>
+                <span>الگوریتم</span>
+            </li>
+        </ul>*@
+}
+
+@section PageHead {
+    <div class="page-head">
+        <div class="container">
+
+            @*<div class="page-title">
+                <h1>
+                    <span>جستجو: @Model.Keyword</span>
+                </h1>
+            </div>*@
+            <br />
+            <br />
+            <div class="portlet-body form">
+                <form id="blogForm" novalidate class="validatable-form" method="get" action="">
+                        <div class="row">
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="form-group form-md-line-input form-md-floating-label">
+                                    @Html.LabelFor(model => Model.Filter.Title)
+                                    @Html.TextBoxFor(model => Model.Filter.Title, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor2(model => Model.Filter.Title)
+                                </div>
+                             </div>
+                             <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                                 <div class="form-group form-md-line-input form-md-floating-label">
+                                    @Html.LabelFor(model => model.Filter.AdvertismentType, new { @class = "control-label" })
+                                    @Html.LocalizedEnumDropDownListFor(model => model.Filter.AdvertismentType, false, null, new { @class = "form-control" })
+                                    @Html.ValidationMessageFor2(model => model.Filter.AdvertismentType)
+                                 </div>
+                             </div>
+                        </div>
+                     <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                @Html.LabelFor(model => model.Filter.ManufacturingCountry, new { @class = "control-label" })
+                                @Html.LocalizedEnumDropDownListFor(model => model.Filter.ManufacturingCountry, false, null, new { @class = "form-control" })
+                                @Html.ValidationMessageFor2(model => model.Filter.ManufacturingCountry)
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                @Html.LabelFor(model => model.Filter.HealthStatus, new { @class = "control-label" })
+                                @Html.LocalizedEnumDropDownListFor(model => model.Filter.HealthStatus, false, null, new { @class = "form-control" })
+                                @Html.ValidationMessageFor2(model => model.Filter.HealthStatus)
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                @Html.LabelFor(model => Model.Filter.ConstructionYearFrom)
+                                @Html.TextBoxFor(model => Model.Filter.ConstructionYearFrom, new { @class = "form-control" })
+                                @Html.ValidationMessageFor2(model => Model.Filter.ConstructionYearFrom)
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+                            <div class="form-group form-md-line-input form-md-floating-label">
+                                @Html.LabelFor(model => Model.Filter.ConstructionYearTo)
+                                @Html.TextBoxFor(model => Model.Filter.ConstructionYearTo, new { @class = "form-control" })
+                                @Html.ValidationMessageFor2(model => Model.Filter.ConstructionYearTo)
+                            </div>
+                        </div>
+                    </div>
+         
+                    <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 col-xs-6">
+                                    <button type="submit" class="btn yellow btn-block background-color-yellow" >جستجو</button>
+                                </div>
+                            </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+}

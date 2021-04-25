@@ -1,0 +1,62 @@
+﻿@using IMAS.Common.ExtensionMethod
+@model IMAS.UI.ViewModels.UserHomePage.UserHomePageViewModel
+@{
+    Layout = "~/Views/Profile/ProfileLayout.cshtml";
+    ViewBag.Title = Model.UserInfo.FullName;
+}
+
+<div class="row margin-top-10">
+    <div class="col-md-8 profile-info">
+        <h1 class="font-blue-chambray">@Model.UserInfo.FullName</h1>
+        @if (!string.IsNullOrEmpty(Model.UserInfo.AboutMe)) {
+            <p>@Html.Raw(Model.UserInfo.AboutMe.Replace(System.Environment.NewLine, "<br/>"))</p>
+        }
+        <p>
+            <a href="@Model.UserInfo.WebSiteUrl" rel="nofollow" target="_blank">@Model.UserInfo.WebSiteUrl</a>
+        </p>
+        <ul class="list-inline">
+            <li title="تاریخ عضویت">
+                <i class="fa fa-calendar"></i>
+                <span class="number-fa">@Model.UserInfo.RegistrationDateString</span>
+            </li>
+        </ul>
+    </div>
+    <!--end col-md-8-->
+    <div class="col-md-4">
+        <div class="portlet sale-summary">
+            <div class="portlet-title">
+                <div class="caption font-blue-chambray">اطلاعات تماس</div>
+            </div>
+            <div class="portlet-body">
+                <ul class="list-unstyled">
+                    <li>
+                        <span class="sale-info">
+                            <i class="fa fa-phone fa-lg"></i>
+                        </span>
+                        <span class="sale-num number-fa">@Model.UserInfo.Tel</span>
+                    </li>
+                    <li>
+                        <span class="sale-info">
+                            <i class="fa fa-mobile fa-lg"></i>
+                        </span>
+                        <span class="sale-num  number-fa">@Model.UserInfo.MobileNumber</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--end col-md-4-->
+</div>
+
+@section head {
+    <meta name="description" content="@(string.IsNullOrWhiteSpace(Model.UserInfo.AboutMe) ?  Model.UserInfo.FullName : Model.UserInfo.AboutMe.MakeShort(155))" />
+    <link href="~/content/assets/pages/css/visitor_profile_index.css" rel="stylesheet" />
+}
+
+@section PageScripts {
+    <script src="~/Content/assets/pages/scripts/visitor_profile.js"></script>
+    <script src="~/Content/assets/global/plugins/botbox/bootbox.min.js"></script>
+}
+
+@section ComponentScripts {
+}

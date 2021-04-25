@@ -1,0 +1,78 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.FlatStonePM
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.StoneType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.StoneType)
+            @Html.LabelFor(model => model.StoneType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MaximumGrindingWidth, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MaximumGrindingWidth)
+            @Html.LabelFor(model => model.MaximumGrindingWidth)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MaximumGrindingLength, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MaximumGrindingLength)
+            @Html.LabelFor(model => model.MaximumGrindingLength)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MaximumGrindingHeight, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MaximumGrindingHeight)
+            @Html.LabelFor(model => model.MaximumGrindingHeight)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.StoneWidth, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.StoneWidth)
+            @Html.LabelFor(model => model.StoneWidth)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.StoneHeight, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.StoneHeight)
+            @Html.LabelFor(model => model.StoneHeight)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.SpindleSpeed, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.SpindleSpeed)
+            @Html.LabelFor(model => model.SpindleSpeed)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.HydraulicReservoirPressure, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HydraulicReservoirPressure)
+            @Html.LabelFor(model => model.HydraulicReservoirPressure)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.HydraulicOilTankCapacity, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HydraulicOilTankCapacity)
+            @Html.LabelFor(model => model.HydraulicOilTankCapacity)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+        </div>
+    </div>
+</div>

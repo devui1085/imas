@@ -1,0 +1,79 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.MachineryPM
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Title, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Title)
+            @Html.LabelFor(model => Model.Title)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Model, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Model)
+            @Html.LabelFor(model => Model.Model)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.ManufacturingFactory, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.ManufacturingFactory)
+            @Html.LabelFor(model => Model.ManufacturingFactory)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Height, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Height)
+            @Html.LabelFor(model => Model.Height)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Length, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Length)
+            @Html.LabelFor(model => Model.Length)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.MaxWorkPieceWeight, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => Model.MaxWorkPieceWeight)
+            @Html.LabelFor(model => Model.MaxWorkPieceWeight)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Comment, new { @class = "form-control", maxlength = "200" })
+            @Html.ValidationMessageFor2(model => Model.Comment)
+            @Html.LabelFor(model => Model.Comment)
+            <span class="help-block"> حداکثر طول متن مجاز توضیح 200 حرف می باشد </span>
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.PriceValue, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => Model.PriceValue)
+            @Html.LabelFor(model => Model.PriceValue)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.ManufacturingCountry, false, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.ManufacturingCountry)
+            @Html.LabelFor(model => model.ManufacturingCountry, new { @class = "control-label" })
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.ConstructionYear, new {@class = "form-control" })
+            @Html.ValidationMessageFor2(model => Model.ConstructionYear)
+            @Html.LabelFor(model => Model.ConstructionYear)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Width, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Width)
+            @Html.LabelFor(model => Model.Width)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.Wieght, new {@class = "form-control"})
+            @Html.ValidationMessageFor2(model => Model.Wieght)
+            @Html.LabelFor(model => Model.Wieght)
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HealthStatus, false, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HealthStatus)
+            @Html.LabelFor(model => model.HealthStatus, new { @class = "control-label" })
+        </div>
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => Model.AdvertiserNote, new { @class = "form-control", maxlength = "200" })
+            @Html.ValidationMessageFor2(model => Model.AdvertiserNote)
+            @Html.LabelFor(model => Model.AdvertiserNote)
+            <span class="help-block"> حداکثر طول متن مجاز توضیح 200 حرف می باشد </span>
+        </div>
+    </div>
+</div>

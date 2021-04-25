@@ -1,0 +1,1503 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccessToNetwork" xml:space="preserve">
+    <value>دسترسی به شبکه علمی</value>
+  </data>
+  <data name="AccountVerfied" xml:space="preserve">
+    <value>عضویت شما در زیگماوب تایید شد.</value>
+  </data>
+  <data name="Arabic" xml:space="preserve">
+    <value>عربی</value>
+  </data>
+  <data name="BirthDate" xml:space="preserve">
+    <value>تاریخ تولد</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>لغو</value>
+  </data>
+  <data name="ChosenContent" xml:space="preserve">
+    <value>مطالب برگزیده</value>
+  </data>
+  <data name="Comment" xml:space="preserve">
+    <value>توضیحات بیشتر</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>دیدگاه دیگران</value>
+  </data>
+  <data name="Confirmed" xml:space="preserve">
+    <value>تایید شده</value>
+  </data>
+  <data name="ConfirmPassword" xml:space="preserve">
+    <value>تکرار کلمه عبور</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>تماس با ما</value>
+  </data>
+  <data name="ContentTitle" xml:space="preserve">
+    <value>عنوان مطلب</value>
+  </data>
+  <data name="Content_AboutIMAS" xml:space="preserve">
+    <value>در زیگماوب شما می توانید مطالب و مقالات خود را در زمینه های مختلف نگارش کرده یا از منابع دیگر ترجمه کنید و از طریق موتورهای جستجو با میلیون ها کاربر در سرتاسر دنیا به اشتراک بگذارید</value>
+  </data>
+  <data name="Content_AccessToNetwork" xml:space="preserve">
+    <value>شما می توانید با نویسندگان و مطالب آنان در یک شبکه علمی آشنا شوید و به آنان جهت بهبود مطالبشان بازخورد بدهید</value>
+  </data>
+  <data name="Content_PopularContent" xml:space="preserve">
+    <value>پربازدیدترین مطالب ماه</value>
+  </data>
+  <data name="Content_Slogan" xml:space="preserve">
+    <value>مطالب خود را به اشتراک بگذارید</value>
+  </data>
+  <data name="Content_TopAuthors" xml:space="preserve">
+    <value>نویسندگان برتر زیگماوب</value>
+  </data>
+  <data name="Content_Translation" xml:space="preserve">
+    <value>شما می توانید مطالب و مقالات مفید را از یک زبان به زبان های دیگر ترجمه کنید</value>
+  </data>
+  <data name="Content_Writing" xml:space="preserve">
+    <value>شما می توانید مطالب و مقالات خود در زمینه های مختلف نگارش درآورید</value>
+  </data>
+  <data name="Create" xml:space="preserve">
+    <value>ایجاد</value>
+  </data>
+  <data name="CreateAccount" xml:space="preserve">
+    <value>ایجاد حساب</value>
+  </data>
+  <data name="Culture_ar_AE" xml:space="preserve">
+    <value>عربی</value>
+  </data>
+  <data name="Culture_az_Latn_AZ" xml:space="preserve">
+    <value>آذری</value>
+  </data>
+  <data name="Culture_de_DE" xml:space="preserve">
+    <value>آلمانی</value>
+  </data>
+  <data name="Culture_en_US" xml:space="preserve">
+    <value>انگلیسی</value>
+  </data>
+  <data name="Culture_es_ES" xml:space="preserve">
+    <value>اسپانیایی</value>
+  </data>
+  <data name="Culture_fa_IR" xml:space="preserve">
+    <value>فارسی</value>
+  </data>
+  <data name="Culture_fr_FR" xml:space="preserve">
+    <value>فرانسوی</value>
+  </data>
+  <data name="Culture_it_IT" xml:space="preserve">
+    <value>ایتالیایی</value>
+  </data>
+  <data name="Culture_ja_JP" xml:space="preserve">
+    <value>ژاپنی</value>
+  </data>
+  <data name="Culture_tr_TR" xml:space="preserve">
+    <value>ترکی</value>
+  </data>
+  <data name="Culture_zh_CN" xml:space="preserve">
+    <value>چینی</value>
+  </data>
+  <data name="CurrentPassword" xml:space="preserve">
+    <value>کلمه عبور فعلی</value>
+  </data>
+  <data name="Edit" xml:space="preserve">
+    <value>ویرایش</value>
+  </data>
+  <data name="EditProfile" xml:space="preserve">
+    <value>ویرایش پروفایل</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>پست الکترونیک</value>
+  </data>
+  <data name="Female" xml:space="preserve">
+    <value>زن</value>
+  </data>
+  <data name="FirstName" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="ForgotYourPassword" xml:space="preserve">
+    <value>دریافت کلمه عبور</value>
+  </data>
+  <data name="Gender" xml:space="preserve">
+    <value>جنسیت</value>
+  </data>
+  <data name="Invalid" xml:space="preserve">
+    <value>نامعتبر</value>
+  </data>
+  <data name="InvalidUsernameOrPassword" xml:space="preserve">
+    <value>نام کاربری و یا کلمه عبور اشتباه است</value>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>زبان</value>
+  </data>
+  <data name="LastLoginDate" xml:space="preserve">
+    <value>تاریخ آخرین ورود</value>
+  </data>
+  <data name="LastName" xml:space="preserve">
+    <value>نام خانوادگی</value>
+  </data>
+  <data name="LoginPage" xml:space="preserve">
+    <value>صفحه ورود</value>
+  </data>
+  <data name="Male" xml:space="preserve">
+    <value>مرد</value>
+  </data>
+  <data name="Man" xml:space="preserve">
+    <value>مرد</value>
+  </data>
+  <data name="MetaDescription" xml:space="preserve">
+    <value>Meta Description</value>
+  </data>
+  <data name="MetaKeywords" xml:space="preserve">
+    <value>Meta Keywords</value>
+  </data>
+  <data name="MsgConfirmCodeExpired" xml:space="preserve">
+    <value>کد تایید  ارسال شده منقضی شده است، برای ارسال مجدد کد تایید روی دکمه ی زیر کلیک کنید.</value>
+  </data>
+  <data name="MsgGeneralError" xml:space="preserve">
+    <value>هنگام پردازش اطلاعات خطا رخ داد</value>
+  </data>
+  <data name="MsgImageDimensionIsInvalid" xml:space="preserve">
+    <value>ابعاد تصویر خارج از محدوده مجاز است</value>
+  </data>
+  <data name="MsgImageSizeIsLarge" xml:space="preserve">
+    <value>حجم تصویر بیشتر از حداکثر مقدار مجاز است</value>
+  </data>
+  <data name="MsgLoginFailed" xml:space="preserve">
+    <value>ورود انجام نشد، اطلاعات ورودی خود را بررسی کنید.</value>
+  </data>
+  <data name="MsgMaxPasswordLengthIs50" xml:space="preserve">
+    <value>کلمه حداکثر پنجاه حرف است</value>
+  </data>
+  <data name="MsgMinPasswordLengthIs4" xml:space="preserve">
+    <value>کلمه عبور حداقل چهار حرف است</value>
+  </data>
+  <data name="MsgPasswordConfirmMismatch" xml:space="preserve">
+    <value>کلمه عبور و تکرار آن یکسان نیست</value>
+  </data>
+  <data name="MsgPasswordIsIncorect" xml:space="preserve">
+    <value>کلمه عبور اشتباه است</value>
+  </data>
+  <data name="MsgPleaseSelectOneFile" xml:space="preserve">
+    <value>لطفا یک فایل را انتخاب کنید</value>
+  </data>
+  <data name="MsgPleaseSelectOneJpgImage" xml:space="preserve">
+    <value>لطفا یک فایل تصویر jpg را انتخاب کنید</value>
+  </data>
+  <data name="MsgSentCodeWillBeExpired" xml:space="preserve">
+    <value>کد ارسال شده بعد از 48 ساعت منقضی خواهد شد.</value>
+  </data>
+  <data name="MsgSourceAndTargetLanguagesShouldBeDifferent" xml:space="preserve">
+    <value>زبان مبدا و مقصد باید متفاوت باشد</value>
+  </data>
+  <data name="MsgVerficaionCodeSent" xml:space="preserve">
+    <value>کد تایید عضویت به آدرس ایمیل شما ارسال شد</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>نام</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>کلمه عبور جدید</value>
+  </data>
+  <data name="NewPasswordConfirm" xml:space="preserve">
+    <value>تکرار کلمه عبور</value>
+  </data>
+  <data name="NotConfirmed" xml:space="preserve">
+    <value>تایید نشده</value>
+  </data>
+  <data name="Observation" xml:space="preserve">
+    <value>مشاهده</value>
+  </data>
+  <data name="Password" xml:space="preserve">
+    <value>کلمه عبور</value>
+  </data>
+  <data name="PasswordAndConfirmPasswordDoNotMatch" xml:space="preserve">
+    <value>رمز عبور و تکرار رمز عبور یکسان نیست.</value>
+  </data>
+  <data name="PersonalInfo" xml:space="preserve">
+    <value>اطلاعات شخصی</value>
+  </data>
+  <data name="PopularContent" xml:space="preserve">
+    <value>مطالب پربازدید</value>
+  </data>
+  <data name="ProfilePicture" xml:space="preserve">
+    <value>تصویر پروفایل</value>
+  </data>
+  <data name="Published" xml:space="preserve">
+    <value>منتشر شود</value>
+  </data>
+  <data name="RegisterUser" xml:space="preserve">
+    <value>ثبت کاربر</value>
+  </data>
+  <data name="RegistrationDate" xml:space="preserve">
+    <value>تاریخ عضویت</value>
+  </data>
+  <data name="RememberMe" xml:space="preserve">
+    <value>مرا به خاطر بسپار</value>
+  </data>
+  <data name="Required" xml:space="preserve">
+    <value>الزامی</value>
+  </data>
+  <data name="Return" xml:space="preserve">
+    <value>بازگشت</value>
+  </data>
+  <data name="Save" xml:space="preserve">
+    <value>ذخیره</value>
+  </data>
+  <data name="Saved" xml:space="preserve">
+    <value>ذخیره شد</value>
+  </data>
+  <data name="SendConfirmCode" xml:space="preserve">
+    <value>ارسال کد تایید</value>
+  </data>
+  <data name="Sexuality" xml:space="preserve">
+    <value>جنسیت</value>
+  </data>
+  <data name="SignIn" xml:space="preserve">
+    <value>ورود</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>من را عضو کن</value>
+  </data>
+  <data name="SourceContentSummary" xml:space="preserve">
+    <value>خلاصه متن اصلی</value>
+  </data>
+  <data name="SourceLanguage" xml:space="preserve">
+    <value>زبان منبع</value>
+  </data>
+  <data name="SourceTitle" xml:space="preserve">
+    <value>عنوان منبع</value>
+  </data>
+  <data name="SourceWebAddress" xml:space="preserve">
+    <value>آدرس اینترنتی منبع</value>
+  </data>
+  <data name="Statistics" xml:space="preserve">
+    <value>در یک نگاه</value>
+  </data>
+  <data name="StringLengthLimit" xml:space="preserve">
+    <value>{0} باید حداقل {2} کاراکتر باشد.</value>
+  </data>
+  <data name="TopAuthors" xml:space="preserve">
+    <value>نویسندگان برتر</value>
+  </data>
+  <data name="Translation" xml:space="preserve">
+    <value>ترجمه</value>
+  </data>
+  <data name="TranslationContent" xml:space="preserve">
+    <value>متن ترجمه</value>
+  </data>
+  <data name="TranslationLanguage" xml:space="preserve">
+    <value>زبان ترجمه</value>
+  </data>
+  <data name="UserName" xml:space="preserve">
+    <value>نام کاربری</value>
+  </data>
+  <data name="Woman" xml:space="preserve">
+    <value>زن</value>
+  </data>
+  <data name="Writing" xml:space="preserve">
+    <value>نگارش</value>
+  </data>
+  <data name="IMAS" xml:space="preserve">
+    <value>طاها سی ان سی</value>
+  </data>
+  <data name="Title" xml:space="preserve">
+    <value>عنوان</value>
+  </data>
+  <data name="ShortAbstract" xml:space="preserve">
+    <value>چکیده یک خطی</value>
+  </data>
+  <data name="InvalidEmailAddress" xml:space="preserve">
+    <value>پست الکترونیک نامعتبر است</value>
+  </data>
+  <data name="PasswordConfirm" xml:space="preserve">
+    <value>تکرار کلمه عبور</value>
+  </data>
+  <data name="PasswordAndPasswordConfirmMismatch" xml:space="preserve">
+    <value>کلمه عبور و تکرار آن یکسان نیست</value>
+  </data>
+  <data name="MsgStringLengthRange" xml:space="preserve">
+    <value>طول {0} حداقل {1} و حداکثر {2} کاراکتر است</value>
+  </data>
+  <data name="MsgYouShouldAcceptLicenceTerms" xml:space="preserve">
+    <value>پذیرش شرایط استفاده الزامی است</value>
+  </data>
+  <data name="MsgEmailAddressIsAlreadyRegistered" xml:space="preserve">
+    <value>پست الکترونیکی که وارد کرده‌اید قابل استفاده نیست. لطفا از یک پست الکترونیک دیگر استفاده کنید</value>
+  </data>
+  <data name="UserAccountActivation" xml:space="preserve">
+    <value>تایید پست الکترونیک</value>
+  </data>
+  <data name="AccountActivationLinkHasExpired" xml:space="preserve">
+    <value>لینک فعال سازی حساب کاربری شما منقضی شده است. لطفا به صفحه ارسال لینک فعال سازی مراجعه کنید و آدرس پست الکترونیک خود را وارد کنید تا مجددا برای شما لینک فعال سازی ارسال شود.</value>
+  </data>
+  <data name="InvalidAccountActivationInfo" xml:space="preserve">
+    <value>اطلاعات مربوط به فعال سازی حساب کاربری نامعتبر است.</value>
+  </data>
+  <data name="PasswordChange" xml:space="preserve">
+    <value>تغییر کلمه عبور</value>
+  </data>
+  <data name="AboutMe" xml:space="preserve">
+    <value>درباره من</value>
+  </data>
+  <data name="MobileNumber" xml:space="preserve">
+    <value>شماره موبایل</value>
+  </data>
+  <data name="WebSiteUrl" xml:space="preserve">
+    <value>آدرس وب سایت</value>
+  </data>
+  <data name="InvalidCurrentPassword" xml:space="preserve">
+    <value>کلمه عبور فعلی اشتباه است</value>
+  </data>
+  <data name="ProfileImageSizeIsTooLarge" xml:space="preserve">
+    <value>اندازه تصویر انتخاب شده بیشتر از حداکثر مقدار مجاز است</value>
+  </data>
+  <data name="ProfileImageDimensionsIsTooLarge" xml:space="preserve">
+    <value>ابعاد تصویر بیشتر از حدکثر مجاز است. ابعاد تصویر ارسالی باید حداکثر 600 در 600 پیکسل باشد.</value>
+  </data>
+  <data name="ProfileImageDimensionsIsTooSmall" xml:space="preserve">
+    <value>ابعاد تصویر خیلی کوچک است. ابعاد تصویر ارسالی باید حداقل 100 پیکسل در 100 پیکسل باشد.</value>
+  </data>
+  <data name="NotSpecified" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="FacebookUrl" xml:space="preserve">
+    <value>آدرس فیسبوک</value>
+  </data>
+  <data name="LinkedInUrl" xml:space="preserve">
+    <value>آدرس لینکدین</value>
+  </data>
+  <data name="TwitterUrl" xml:space="preserve">
+    <value>آدرس توییتر</value>
+  </data>
+  <data name="InvalidUrl" xml:space="preserve">
+    <value>آدرس نامعتبر است</value>
+  </data>
+  <data name="RegistrationIsDisabledNow" xml:space="preserve">
+    <value>فعلا امکان ثبت نام وجود ندارد. این امکان به زودی فعال می شود.</value>
+  </data>
+  <data name="YourAccountHasNotActivated" xml:space="preserve">
+    <value>حساب کاربری شما فعال نشده است. لطفا به پست الکترونیک خود مراجعه کنید و روی لینک فعال سازی کلیک کنید.</value>
+  </data>
+  <data name="YourAccountIsLocked" xml:space="preserve">
+    <value>حساب کاربری شما غیرفعال شده است.</value>
+  </data>
+  <data name="AboutWeblog" xml:space="preserve">
+    <value>درباره وبلاگ</value>
+  </data>
+  <data name="BlogAddressWithStar" xml:space="preserve">
+    <value>آدرس وبلاگ *</value>
+  </data>
+  <data name="BlogTitleWithStar" xml:space="preserve">
+    <value>عنوان وبلاگ *</value>
+  </data>
+  <data name="InvalidBlogName" xml:space="preserve">
+    <value>آدرس وبلاگ تنها از حروف انگلیسی تشکیل می شود و باید حداقل 4 حرف و حداکثر 20 حرف باشد. استفاده از اعداد، علامت‌ها یا خط فاصله مجاز نیست.</value>
+  </data>
+  <data name="BlogNameIsNotAvailable" xml:space="preserve">
+    <value>از این نام نمی توانید استفاده کنید. لطفا نام دیگری انتخاب کنید.</value>
+  </data>
+  <data name="Date_Month1" xml:space="preserve">
+    <value>فروردین</value>
+  </data>
+  <data name="Date_Month10" xml:space="preserve">
+    <value>دی</value>
+  </data>
+  <data name="Date_Month11" xml:space="preserve">
+    <value>بهمن</value>
+  </data>
+  <data name="Date_Month12" xml:space="preserve">
+    <value>اسفند</value>
+  </data>
+  <data name="Date_Month2" xml:space="preserve">
+    <value>اردیبهشت</value>
+  </data>
+  <data name="Date_Month3" xml:space="preserve">
+    <value>خرداد</value>
+  </data>
+  <data name="Date_Month4" xml:space="preserve">
+    <value>تیر</value>
+  </data>
+  <data name="Date_Month5" xml:space="preserve">
+    <value>مرداد</value>
+  </data>
+  <data name="Date_Month6" xml:space="preserve">
+    <value>شهریور</value>
+  </data>
+  <data name="Date_Month7" xml:space="preserve">
+    <value>مهر</value>
+  </data>
+  <data name="Date_Month8" xml:space="preserve">
+    <value>آبان</value>
+  </data>
+  <data name="Date_Month9" xml:space="preserve">
+    <value>آذر</value>
+  </data>
+  <data name="Friday" xml:space="preserve">
+    <value>جمعه</value>
+  </data>
+  <data name="Monday" xml:space="preserve">
+    <value>دوشنبه</value>
+  </data>
+  <data name="Saturday" xml:space="preserve">
+    <value>شنبه</value>
+  </data>
+  <data name="Sunday" xml:space="preserve">
+    <value>یکشنبه</value>
+  </data>
+  <data name="Thursday" xml:space="preserve">
+    <value>پنجشنبه</value>
+  </data>
+  <data name="Tuesday" xml:space="preserve">
+    <value>سه شنبه</value>
+  </data>
+  <data name="Wednesday" xml:space="preserve">
+    <value>چهارشنبه</value>
+  </data>
+  <data name="Url" xml:space="preserve">
+    <value>آدرس اینترنتی</value>
+  </data>
+  <data name="NotificationMessage_WriteComment" xml:space="preserve">
+    <value>برای «{0}» یک دیدگاه ثبت کرد</value>
+  </data>
+  <data name="EducationalOrganizationName" xml:space="preserve">
+    <value>نام موسسه آموزشی</value>
+  </data>
+  <data name="EducationGrade" xml:space="preserve">
+    <value>مقطع تحصیلی</value>
+  </data>
+  <data name="EndYear" xml:space="preserve">
+    <value>سال پایان</value>
+  </data>
+  <data name="StartYear" xml:space="preserve">
+    <value>سال شروع</value>
+  </data>
+  <data name="UniversityFieldName" xml:space="preserve">
+    <value>رشته</value>
+  </data>
+  <data name="EducationGrade_Associate" xml:space="preserve">
+    <value>کاردانی</value>
+  </data>
+  <data name="EducationGrade_Bachelor" xml:space="preserve">
+    <value>کارشناسی</value>
+  </data>
+  <data name="EducationGrade_HighSchool" xml:space="preserve">
+    <value>دبیرستان / هنرستان</value>
+  </data>
+  <data name="EducationGrade_HighSchoolDiploma" xml:space="preserve">
+    <value>دیپلم</value>
+  </data>
+  <data name="EducationGrade_Master" xml:space="preserve">
+    <value>کارشناسی ارشد</value>
+  </data>
+  <data name="EducationGrade_Phd" xml:space="preserve">
+    <value>دکترا</value>
+  </data>
+  <data name="JobName" xml:space="preserve">
+    <value>عنوان شغلی</value>
+  </data>
+  <data name="OrganizationName" xml:space="preserve">
+    <value>نام سازمان</value>
+  </data>
+  <data name="ToNow" xml:space="preserve">
+    <value>تا کنون</value>
+  </data>
+  <data name="NotificationMessage_WriteMessage" xml:space="preserve">
+    <value>برای شما یک پیام خصوصی ارسال کرده است</value>
+  </data>
+  <data name="BusinessIntroduceText" xml:space="preserve">
+    <value>متن تبلیغات</value>
+  </data>
+  <data name="AxisMovementSpeedFrom" xml:space="preserve">
+    <value>سرعت حرکت محور ها از</value>
+  </data>
+  <data name="AxisMovementSpeedTo" xml:space="preserve">
+    <value>تا</value>
+  </data>
+  <data name="BedWidth" xml:space="preserve">
+    <value>عرض بستر (میلی متر)</value>
+  </data>
+  <data name="ConstructionYear" xml:space="preserve">
+    <value>سال ساخت</value>
+  </data>
+  <data name="FourOrderDiameter" xml:space="preserve">
+    <value>قطر چهار نظام (میلی متر)</value>
+  </data>
+  <data name="HasFourOrder" xml:space="preserve">
+    <value>چهار نظام</value>
+  </data>
+  <data name="HasLapent" xml:space="preserve">
+    <value>لپنت</value>
+  </data>
+  <data name="HasLift" xml:space="preserve">
+    <value>لیفت</value>
+  </data>
+  <data name="HasMorghak" xml:space="preserve">
+    <value>مرغک</value>
+  </data>
+  <data name="HasRulerAndViewer" xml:space="preserve">
+    <value>خط کش و نمایشگر</value>
+  </data>
+  <data name="HasSoapAndWaterSystem" xml:space="preserve">
+    <value>سیستم آب و صابون</value>
+  </data>
+  <data name="HasThreeOrder" xml:space="preserve">
+    <value>سه نظام</value>
+  </data>
+  <data name="HealthStatus" xml:space="preserve">
+    <value>وضعیت دستگاه</value>
+  </data>
+  <data name="Height" xml:space="preserve">
+    <value>ارتفاع (میلی متر)</value>
+  </data>
+  <data name="InkyScrewFrom" xml:space="preserve">
+    <value>پیچ اینچی از</value>
+  </data>
+  <data name="InkyScrewTo" xml:space="preserve">
+    <value>تا</value>
+  </data>
+  <data name="Length" xml:space="preserve">
+    <value>طول (میلی متر)</value>
+  </data>
+  <data name="ManufacturingCountry" xml:space="preserve">
+    <value>کشور سازنده</value>
+  </data>
+  <data name="ManufacturingFactory" xml:space="preserve">
+    <value>کارخانه سازنده</value>
+  </data>
+  <data name="MaximumBorderDiameter" xml:space="preserve">
+    <value>حداکثر قطر حاشیه (میلی متر)</value>
+    <comment>در تصویر ناخوانا بود</comment>
+  </data>
+  <data name="MaximumDiameter" xml:space="preserve">
+    <value>حداکثر قطر تراشی (میلی متر)</value>
+    <comment>در تصویر ناخوانابود</comment>
+  </data>
+  <data name="MaximumMachiningLength" xml:space="preserve">
+    <value>حداکثر طول ماشین کاری (میلی متر)</value>
+  </data>
+  <data name="MaxWorkPieceWeight" xml:space="preserve">
+    <value>حداکثر وزن مجاز قطعه کار (کیلوگرم)</value>
+  </data>
+  <data name="MetricScrewFrom" xml:space="preserve">
+    <value>پیچ متریک از</value>
+  </data>
+  <data name="MetricScrewTo" xml:space="preserve">
+    <value>تا</value>
+  </data>
+  <data name="Model" xml:space="preserve">
+    <value>مدل</value>
+  </data>
+  <data name="MorghakDiagonal" xml:space="preserve">
+    <value>قطر مرغک (میلی متر)</value>
+  </data>
+  <data name="MorghakDisplacementLength" xml:space="preserve">
+    <value>طول جابه جایی مرغک (میلی متر)</value>
+  </data>
+  <data name="Price" xml:space="preserve">
+    <value>قیمت (تومان)</value>
+  </data>
+  <data name="RailsArePlated" xml:space="preserve">
+    <value>ریل ها آبکاری شده</value>
+  </data>
+  <data name="RulerMark" xml:space="preserve">
+    <value>مارک خط کش</value>
+  </data>
+  <data name="SpindleSpinsFrom" xml:space="preserve">
+    <value>دور اسپیندل از</value>
+  </data>
+  <data name="SpindleSpinsNumber" xml:space="preserve">
+    <value>تعداد دور اسپیندل</value>
+  </data>
+  <data name="SpindleSpinsTo" xml:space="preserve">
+    <value>تا</value>
+  </data>
+  <data name="ThreeOrderDiameter" xml:space="preserve">
+    <value>قطر سه نظام (میلی متر)</value>
+  </data>
+  <data name="Width" xml:space="preserve">
+    <value>عرض (میلی متر)</value>
+  </data>
+  <data name="Wieght" xml:space="preserve">
+    <value>وزن دستگاه (کیلوگرم)</value>
+  </data>
+  <data name="Country_America" xml:space="preserve">
+    <value>امریکا</value>
+  </data>
+  <data name="Country_Austria" xml:space="preserve">
+    <value>استرالیا</value>
+  </data>
+  <data name="Country_Belgium" xml:space="preserve">
+    <value>بلژیک</value>
+  </data>
+  <data name="Country_Bulgaria" xml:space="preserve">
+    <value>بلغارستان</value>
+  </data>
+  <data name="Country_Canada" xml:space="preserve">
+    <value>کانادا</value>
+  </data>
+  <data name="Country_Check" xml:space="preserve">
+    <value>چک</value>
+  </data>
+  <data name="Country_China" xml:space="preserve">
+    <value>چین</value>
+  </data>
+  <data name="Country_England" xml:space="preserve">
+    <value>انگلیس</value>
+  </data>
+  <data name="Country_France" xml:space="preserve">
+    <value>فرانسه</value>
+  </data>
+  <data name="Country_Germany" xml:space="preserve">
+    <value>آلمان</value>
+  </data>
+  <data name="Country_Hungary" xml:space="preserve">
+    <value>مجارستان</value>
+  </data>
+  <data name="Country_India" xml:space="preserve">
+    <value>هند</value>
+  </data>
+  <data name="Country_Iran" xml:space="preserve">
+    <value>ایران</value>
+  </data>
+  <data name="Country_Italy" xml:space="preserve">
+    <value>ایتالیا</value>
+  </data>
+  <data name="Country_Japan" xml:space="preserve">
+    <value>ژاپن</value>
+  </data>
+  <data name="Country_NorthKorea" xml:space="preserve">
+    <value>کره شمالی</value>
+  </data>
+  <data name="Country_Poland" xml:space="preserve">
+    <value>لهستان</value>
+  </data>
+  <data name="Country_Romania" xml:space="preserve">
+    <value>رومانی</value>
+  </data>
+  <data name="Country_Russia" xml:space="preserve">
+    <value>روسیه</value>
+  </data>
+  <data name="Country_SouthKorea" xml:space="preserve">
+    <value>کره جنوبی</value>
+  </data>
+  <data name="Country_Spain" xml:space="preserve">
+    <value>اسپانیا</value>
+  </data>
+  <data name="Country_Sweden" xml:space="preserve">
+    <value>سوئد</value>
+  </data>
+  <data name="Country_Swiss" xml:space="preserve">
+    <value>سوئیس</value>
+  </data>
+  <data name="Country_Taiwan" xml:space="preserve">
+    <value>تایوان</value>
+  </data>
+  <data name="Country_Turkey" xml:space="preserve">
+    <value>ترکیه</value>
+  </data>
+  <data name="Country_Yugoslavia" xml:space="preserve">
+    <value>یوگسلاوی</value>
+  </data>
+  <data name="HavingEnum_HasNot" xml:space="preserve">
+    <value>ندارد</value>
+  </data>
+  <data name="HavingEnum_Has" xml:space="preserve">
+    <value>دارد</value>
+  </data>
+  <data name="Country_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HealthStatus_Healthy" xml:space="preserve">
+    <value>سالم</value>
+  </data>
+  <data name="HealthStatus_NeedToBeRepaired" xml:space="preserve">
+    <value>نیاز به تعمیر</value>
+  </data>
+  <data name="HealthStatus_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HealthStatus_NotChecked" xml:space="preserve">
+    <value>بررسی نشده</value>
+  </data>
+  <data name="HavingEnum_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="IllegalInput" xml:space="preserve">
+    <value>اطلاعات ورودی نامعتبر است</value>
+  </data>
+  <data name="AdvertismentStatus_Deactive" xml:space="preserve">
+    <value>غیر فعال</value>
+  </data>
+  <data name="AdvertismentStatus_Published" xml:space="preserve">
+    <value>منتشر شده</value>
+  </data>
+  <data name="AdvertismentStatus_Saled" xml:space="preserve">
+    <value>فروخته شد</value>
+  </data>
+  <data name="AdvertismentStatus_Pending" xml:space="preserve">
+    <value>در انتظار تایید</value>
+  </data>
+  <data name="NormalLathe" xml:space="preserve">
+    <value>تراش معمولی</value>
+  </data>
+  <data name="No" xml:space="preserve">
+    <value>خیر</value>
+  </data>
+  <data name="None" xml:space="preserve">
+    <value>مشخص نشده</value>
+  </data>
+  <data name="Yes" xml:space="preserve">
+    <value>بله</value>
+  </data>
+  <data name="Has" xml:space="preserve">
+    <value>دارد</value>
+  </data>
+  <data name="HasNot" xml:space="preserve">
+    <value>ندارد</value>
+  </data>
+  <data name="HoursAgo" xml:space="preserve">
+    <value>ساعت پیش</value>
+  </data>
+  <data name="MinutesAgo" xml:space="preserve">
+    <value>دقیقه پیش</value>
+  </data>
+  <data name="SecondsAgo" xml:space="preserve">
+    <value>ثانیه پیش</value>
+  </data>
+  <data name="Tel" xml:space="preserve">
+    <value>تلفن</value>
+  </data>
+  <data name="Machinery" xml:space="preserve">
+    <value>عادی</value>
+  </data>
+  <data name="Advertisment" xml:space="preserve">
+    <value>آگهی</value>
+  </data>
+  <data name="Lathe" xml:space="preserve">
+    <value>تراش</value>
+  </data>
+  <data name="PriceValue" xml:space="preserve">
+    <value>قیمت (تومان)</value>
+  </data>
+  <data name="AdvertismentStatus_None" xml:space="preserve">
+    <value>نامشخص</value>
+  </data>
+  <data name="AdvertismentStatus_Removed" xml:space="preserve">
+    <value>حذف شده</value>
+  </data>
+  <data name="AdvertismentStatus_Unconfirmed" xml:space="preserve">
+    <value>عدم تایید</value>
+  </data>
+  <data name="ConstructionYearFrom" xml:space="preserve">
+    <value>سال ساخت از</value>
+  </data>
+  <data name="ConstructionYearTo" xml:space="preserve">
+    <value>تا</value>
+  </data>
+  <data name="AliveToolsNumber" xml:space="preserve">
+    <value>تعداد ابزار زنده</value>
+  </data>
+  <data name="CncLathe" xml:space="preserve">
+    <value>سی ان سی</value>
+  </data>
+  <data name="ControlStatus" xml:space="preserve">
+    <value>وضعیت کنترل</value>
+  </data>
+  <data name="DriveMarks" xml:space="preserve">
+    <value>مارک درایوها</value>
+  </data>
+  <data name="EngineMarks" xml:space="preserve">
+    <value>مارک موتورها</value>
+  </data>
+  <data name="HasAcEngine" xml:space="preserve">
+    <value>موتور AC</value>
+  </data>
+  <data name="HasDcEngine" xml:space="preserve">
+    <value>موتور DC</value>
+  </data>
+  <data name="HasOtherEngine" xml:space="preserve">
+    <value>موتور سایر</value>
+  </data>
+  <data name="HasXAxis" xml:space="preserve">
+    <value>محور X</value>
+  </data>
+  <data name="HasYAxis" xml:space="preserve">
+    <value>محور Y</value>
+  </data>
+  <data name="HasZAxis" xml:space="preserve">
+    <value>محور Z</value>
+  </data>
+  <data name="LatheType" xml:space="preserve">
+    <value>نوع تراش</value>
+  </data>
+  <data name="LatheType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="LatheType_TwoAxis" xml:space="preserve">
+    <value>دو محور</value>
+  </data>
+  <data name="LatheType_TwoAxisPlusCAxis" xml:space="preserve">
+    <value>دو محور + محور C</value>
+  </data>
+  <data name="LatheType_TwoTart" xml:space="preserve">
+    <value>دو تارت</value>
+  </data>
+  <data name="LatheType_TwoTartPlusCAxis" xml:space="preserve">
+    <value>دو تارت + محور C</value>
+  </data>
+  <data name="RailType" xml:space="preserve">
+    <value>نوع ریل</value>
+  </data>
+  <data name="RailType_Diagonal" xml:space="preserve">
+    <value>مورب</value>
+  </data>
+  <data name="RailType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RailType_Simple" xml:space="preserve">
+    <value>ساده</value>
+  </data>
+  <data name="SpindleEnginePower" xml:space="preserve">
+    <value>قدرت موتور اسپیندل</value>
+  </data>
+  <data name="SpindleHasGearbox" xml:space="preserve">
+    <value>گیرباکس اسپیندل</value>
+  </data>
+  <data name="SpindleRoundPerMinute" xml:space="preserve">
+    <value>دور اسپیندل در دقیقه</value>
+  </data>
+  <data name="TableType_Box" xml:space="preserve">
+    <value>Box</value>
+  </data>
+  <data name="TableType_LinEar" xml:space="preserve">
+    <value>Lin-Ear</value>
+  </data>
+  <data name="TableType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolChangerType" xml:space="preserve">
+    <value>نوع تعویض گر ابزار</value>
+  </data>
+  <data name="ToolChangerType_Electric" xml:space="preserve">
+    <value>الکتریکی</value>
+    <comment>Electric</comment>
+  </data>
+  <data name="ToolChangerType_Hydraulic" xml:space="preserve">
+    <value>هیدرولیک</value>
+  </data>
+  <data name="ToolChangerType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolsNumber" xml:space="preserve">
+    <value>تعداد ابزار</value>
+  </data>
+  <data name="XAxisMovementFeed" xml:space="preserve">
+    <value>فید حرکت محور X</value>
+  </data>
+  <data name="XAxisSpeed" xml:space="preserve">
+    <value>سرعت محور X</value>
+  </data>
+  <data name="XAxisTableType" xml:space="preserve">
+    <value>نوع میز محور X</value>
+  </data>
+  <data name="YAxisMovementFeed" xml:space="preserve">
+    <value>فید حرکت محور Y</value>
+  </data>
+  <data name="YAxisSpeed" xml:space="preserve">
+    <value>سرعت محور Y</value>
+  </data>
+  <data name="YAxisTableType" xml:space="preserve">
+    <value>نوع میز محور Y</value>
+  </data>
+  <data name="ZAxisMovementFeed" xml:space="preserve">
+    <value>فید حرکت محور Z</value>
+  </data>
+  <data name="ZAxisSpeed" xml:space="preserve">
+    <value>سرعت محور Z</value>
+  </data>
+  <data name="ZAxisTableType" xml:space="preserve">
+    <value>نوع میز محور Z</value>
+  </data>
+  <data name="FlatStone" xml:space="preserve">
+    <value>سنگ تخت</value>
+  </data>
+  <data name="HydraulicOilTankCapacity" xml:space="preserve">
+    <value>ظرفیت مخزن هیدرولیک</value>
+  </data>
+  <data name="HydraulicReservoirPressure" xml:space="preserve">
+    <value>فشار مخزن هیدرولیک</value>
+  </data>
+  <data name="MainEnginePower" xml:space="preserve">
+    <value>قدرت موتور اصلی</value>
+  </data>
+  <data name="MaximumAllowedLoad" xml:space="preserve">
+    <value>حداکثر بار مجاز</value>
+  </data>
+  <data name="MaximumGrindingHeight" xml:space="preserve">
+    <value>ماکزیمم ارتفاع سنگ زنی (میلی متر)</value>
+  </data>
+  <data name="MaximumGrindingLength" xml:space="preserve">
+    <value>ماکزیمم طول سنگ زنی (میلی متر)</value>
+  </data>
+  <data name="MaximumGrindingWidth" xml:space="preserve">
+    <value>ماکزیمم عرض سنگ زنی (میلی متر)</value>
+  </data>
+  <data name="MaximumHiegh" xml:space="preserve">
+    <value>حداکثر ارتفاع</value>
+  </data>
+  <data name="MaximumRotationalDiameter" xml:space="preserve">
+    <value>حداکثر قطر چرخش (میلی متر)</value>
+  </data>
+  <data name="MovementNumber" xml:space="preserve">
+    <value>تعداد سرعت حرکت</value>
+  </data>
+  <data name="MovementSpeed" xml:space="preserve">
+    <value>سرعت حرکت</value>
+  </data>
+  <data name="MovementSpeedNumber" xml:space="preserve">
+    <value>تعداد سرعت حرکت</value>
+  </data>
+  <data name="NormalCarousel" xml:space="preserve">
+    <value>کاروسل معمولی</value>
+  </data>
+  <data name="RamHorizontalCourse" xml:space="preserve">
+    <value>کورس افقی RAM</value>
+  </data>
+  <data name="RamVerticalCourse" xml:space="preserve">
+    <value>کورس عمودی RAM</value>
+  </data>
+  <data name="RotationSpeedNumber" xml:space="preserve">
+    <value>تعداد سرعت چرخش</value>
+  </data>
+  <data name="SpindleSpeed" xml:space="preserve">
+    <value>سرعت اسپیندل</value>
+  </data>
+  <data name="Stone" xml:space="preserve">
+    <value>سنگ</value>
+  </data>
+  <data name="StoneHeight" xml:space="preserve">
+    <value>ارتفاع سنگ</value>
+  </data>
+  <data name="StoneType" xml:space="preserve">
+    <value>نوع سنگ</value>
+  </data>
+  <data name="StoneType_BasedOnSize" xml:space="preserve">
+    <value>اندازه ای</value>
+  </data>
+  <data name="StoneType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="StoneType_Normal" xml:space="preserve">
+    <value>معمولی</value>
+  </data>
+  <data name="StoneWidth" xml:space="preserve">
+    <value>عرض سنگ</value>
+  </data>
+  <data name="TableDiameter" xml:space="preserve">
+    <value>قطر میز</value>
+  </data>
+  <data name="TableRotationSpeed" xml:space="preserve">
+    <value>سرعت چرخش میز</value>
+  </data>
+  <data name="AxisNumber" xml:space="preserve">
+    <value>تعداد محور</value>
+  </data>
+  <data name="AxisType" xml:space="preserve">
+    <value>نوع محور</value>
+  </data>
+  <data name="BodyType" xml:space="preserve">
+    <value>نوع بدنه</value>
+  </data>
+  <data name="BodyType_CastIronCastings" xml:space="preserve">
+    <value>چدن ریخته گری</value>
+  </data>
+  <data name="BodyType_CementCasting" xml:space="preserve">
+    <value>سیمان ریخته گری</value>
+  </data>
+  <data name="BodyType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BodyType_Welding" xml:space="preserve">
+    <value>جوشکاری</value>
+  </data>
+  <data name="EngineDriversMark" xml:space="preserve">
+    <value>مارک درایورهای موتور</value>
+  </data>
+  <data name="EnginesMark" xml:space="preserve">
+    <value>مارک موتورها</value>
+  </data>
+  <data name="HasACAxisEngine" xml:space="preserve">
+    <value>موتور محور AC</value>
+  </data>
+  <data name="HasAirPump" xml:space="preserve">
+    <value>مخزن هوا</value>
+  </data>
+  <data name="HasBalanceWeight" xml:space="preserve">
+    <value>وزنه تعادل</value>
+  </data>
+  <data name="HasClamp" xml:space="preserve">
+    <value>گیره</value>
+  </data>
+  <data name="HasComputer" xml:space="preserve">
+    <value>کامپیوتر</value>
+  </data>
+  <data name="HasDCAxisEngine" xml:space="preserve">
+    <value>موتور محور DC</value>
+  </data>
+  <data name="HasDrillCapability" xml:space="preserve">
+    <value>قابلیت مته کاری</value>
+  </data>
+  <data name="HasFourthAxis" xml:space="preserve">
+    <value>چهار محور</value>
+  </data>
+  <data name="HasHydraulicBalanceSystem" xml:space="preserve">
+    <value>سیستم تعادلی هیدرولیک</value>
+  </data>
+  <data name="HasLEDLighting" xml:space="preserve">
+    <value>چراغ روشنایی</value>
+  </data>
+  <data name="HasMeterFunctionality" xml:space="preserve">
+    <value>قابلیت متر</value>
+  </data>
+  <data name="HasRulerAndDRO" xml:space="preserve">
+    <value>خط کش و DRO</value>
+  </data>
+  <data name="HasSoapWaterPump" xml:space="preserve">
+    <value>مخزن آب صابون</value>
+  </data>
+  <data name="HasSoapWaterSystem" xml:space="preserve">
+    <value>سیستم آب صابون</value>
+  </data>
+  <data name="HasToolbox" xml:space="preserve">
+    <value>جعبه ابزار</value>
+  </data>
+  <data name="HasToolCenterSoapWater" xml:space="preserve">
+    <value>آب صابون مرکز ابزار</value>
+  </data>
+  <data name="LubricationType" xml:space="preserve">
+    <value>روغنکاری</value>
+  </data>
+  <data name="MainEngingePower" xml:space="preserve">
+    <value>توان موتور اصلی</value>
+  </data>
+  <data name="MillingRailType" xml:space="preserve">
+    <value>نوع ریل</value>
+  </data>
+  <data name="RailsHealthStatus" xml:space="preserve">
+    <value>وضعیت ریل ها</value>
+  </data>
+  <data name="SpindleGearbox" xml:space="preserve">
+    <value>اسپیندل گیربکس</value>
+  </data>
+  <data name="SpindleMaxSpeed" xml:space="preserve">
+    <value>حداکثر سرعت اسپیندل</value>
+  </data>
+  <data name="SpindleMinSpeed" xml:space="preserve">
+    <value>حداقل سرعت اسپیندل</value>
+  </data>
+  <data name="SpindleRound" xml:space="preserve">
+    <value>دور اسپیندل (در دقیقه)</value>
+  </data>
+  <data name="SpindleType" xml:space="preserve">
+    <value>نوع اسپیندل</value>
+  </data>
+  <data name="TableHeight" xml:space="preserve">
+    <value>طول میز</value>
+  </data>
+  <data name="TableType" xml:space="preserve">
+    <value>نوع میز</value>
+  </data>
+  <data name="TableWidth" xml:space="preserve">
+    <value>عرض میز</value>
+  </data>
+  <data name="ToolsCountSimultaneousChange" xml:space="preserve">
+    <value>تعداد ابزار تعویض همزمان</value>
+  </data>
+  <data name="ToolsHolderType" xml:space="preserve">
+    <value>نوع ابزارگیر</value>
+  </data>
+  <data name="ToolsHolderType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="XCourse" xml:space="preserve">
+    <value>کورس X</value>
+  </data>
+  <data name="XCourseMaxSpeed" xml:space="preserve">
+    <value>حداکثر سرعت کورس X</value>
+  </data>
+  <data name="XCourseMinSpeed" xml:space="preserve">
+    <value>حداقل سرعت کورس X</value>
+  </data>
+  <data name="YCourse" xml:space="preserve">
+    <value>کورس Y</value>
+  </data>
+  <data name="YCourseMaxSpeed" xml:space="preserve">
+    <value>حداکثر سرعت کورس Y</value>
+  </data>
+  <data name="YCourseMinSpeed" xml:space="preserve">
+    <value>حداقل سرعت کورس Y</value>
+  </data>
+  <data name="ZCourse" xml:space="preserve">
+    <value>کورس Z</value>
+  </data>
+  <data name="ZCourseMaxSpeed" xml:space="preserve">
+    <value>حداکثر سرعت کورس Z</value>
+  </data>
+  <data name="ZCourseMinSpeed" xml:space="preserve">
+    <value>حداقل سرعت کورس Z</value>
+  </data>
+  <data name="AxisType_Autmatic" xml:space="preserve">
+    <value>اتوماتیک</value>
+  </data>
+  <data name="AxisType_Manual" xml:space="preserve">
+    <value>دستی</value>
+  </data>
+  <data name="AxisType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AxisType_XAxisIsAutomatic" xml:space="preserve">
+    <value>محور X  اتوماتیک</value>
+  </data>
+  <data name="CncMilling" xml:space="preserve">
+    <value>فرز سی ان سی</value>
+  </data>
+  <data name="LubricationType_Automatic" xml:space="preserve">
+    <value>اتوماتیک</value>
+  </data>
+  <data name="LubricationType_Manual" xml:space="preserve">
+    <value>دستی</value>
+  </data>
+  <data name="LubricationType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ManualMilling" xml:space="preserve">
+    <value>فرز دستی</value>
+  </data>
+  <data name="MillingRailType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MillingRailType_Normal" xml:space="preserve">
+    <value>عادی</value>
+  </data>
+  <data name="MillingRailType_Turcite" xml:space="preserve">
+    <value>ترسایت</value>
+  </data>
+  <data name="RailsHealthStatus_Healthy" xml:space="preserve">
+    <value>سالم</value>
+  </data>
+  <data name="RailsHealthStatus_NeedsToBeRestored" xml:space="preserve">
+    <value>نیاز به بازسازی دارد</value>
+  </data>
+  <data name="RailsHealthStatus_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="RailsHealthStatus_Scratches" xml:space="preserve">
+    <value>خراش دارد</value>
+  </data>
+  <data name="SpindleType_ISO30" xml:space="preserve">
+    <value>ISO30</value>
+  </data>
+  <data name="SpindleType_ISO40" xml:space="preserve">
+    <value>ISO40</value>
+  </data>
+  <data name="SpindleType_ISO50" xml:space="preserve">
+    <value>ISO50</value>
+  </data>
+  <data name="SpindleType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="ToolsHolderType_BT30" xml:space="preserve">
+    <value>BT30</value>
+  </data>
+  <data name="ToolsHolderType_BT40" xml:space="preserve">
+    <value>BT40</value>
+  </data>
+  <data name="ToolsHolderType_BT50" xml:space="preserve">
+    <value>BT50</value>
+  </data>
+  <data name="ToolsHolderType_ISO30" xml:space="preserve">
+    <value>ISO30</value>
+  </data>
+  <data name="ToolsHolderType_ISO40" xml:space="preserve">
+    <value>ISO40</value>
+  </data>
+  <data name="ToolsHolderType_ISO50" xml:space="preserve">
+    <value>ISO50</value>
+  </data>
+  <data name="ToolsHolderType_SK30" xml:space="preserve">
+    <value>SK30</value>
+  </data>
+  <data name="ToolsHolderType_SK40" xml:space="preserve">
+    <value>SK40</value>
+  </data>
+  <data name="ToolsHolderType_SK50" xml:space="preserve">
+    <value>SK50</value>
+  </data>
+  <data name="DaysAgo" xml:space="preserve">
+    <value>روز پیش</value>
+  </data>
+  <data name="MonthsAgo" xml:space="preserve">
+    <value>ماه پیش</value>
+  </data>
+  <data name="WeeksAgo" xml:space="preserve">
+    <value>هفته پیش</value>
+  </data>
+  <data name="ColumnHeadDiameteColumnHeadDiameter" xml:space="preserve">
+    <value>قطر سر ستون</value>
+  </data>
+  <data name="CoolingPump" xml:space="preserve">
+    <value>پمپ خنک کننده</value>
+  </data>
+  <data name="DiameterDrillMaxAllowed" xml:space="preserve">
+    <value>حداکثر قطر مته مجاز</value>
+  </data>
+  <data name="Drill" xml:space="preserve">
+    <value>دریل</value>
+  </data>
+  <data name="DrillType" xml:space="preserve">
+    <value>نوع دریل</value>
+  </data>
+  <data name="GearboxType" xml:space="preserve">
+    <value>نوع گیربکس</value>
+  </data>
+  <data name="GearboxType_Belt" xml:space="preserve">
+    <value>تسمه ای</value>
+  </data>
+  <data name="GearboxType_Manual" xml:space="preserve">
+    <value>دنده ای</value>
+  </data>
+  <data name="GearboxType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="HoleType" xml:space="preserve">
+    <value>نوع سوارخ کاری</value>
+  </data>
+  <data name="HoleType_Automatic" xml:space="preserve">
+    <value>اتوماتیک</value>
+  </data>
+  <data name="HoleType_Manual" xml:space="preserve">
+    <value>دستی</value>
+  </data>
+  <data name="HoleType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="MaxDistanceFromColumn" xml:space="preserve">
+    <value>حداکثر فاصله از ستون (میلی متر)</value>
+  </data>
+  <data name="MaxDistanceFromTable" xml:space="preserve">
+    <value>حداکثر فاصله از میز (میلی متر)</value>
+  </data>
+  <data name="MillerCapability" xml:space="preserve">
+    <value>قابلیت قلاویز کاری</value>
+  </data>
+  <data name="Morse" xml:space="preserve">
+    <value>مورس</value>
+  </data>
+  <data name="NumberOfSpindleSpeeds" xml:space="preserve">
+    <value>تعداد سرعت اسپیندل</value>
+  </data>
+  <data name="RotatingTable" xml:space="preserve">
+    <value>میز گردشی</value>
+  </data>
+  <data name="TableMaxRotation" xml:space="preserve">
+    <value>حداکثر چرخش میز</value>
+  </data>
+  <data name="ColumnHeadDiameter" xml:space="preserve">
+    <value>قطر سرستون</value>
+  </data>
+  <data name="DrillType_Manual" xml:space="preserve">
+    <value>معمولی</value>
+  </data>
+  <data name="DrillType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="DrillType_Normal" xml:space="preserve">
+    <value>دستی</value>
+  </data>
+  <data name="DrillType_Radial" xml:space="preserve">
+    <value>رادیال</value>
+  </data>
+  <data name="DrillType_WithColumn" xml:space="preserve">
+    <value>ستونی</value>
+  </data>
+  <data name="AdvertismentType" xml:space="preserve">
+    <value>نوع آگهی</value>
+  </data>
+  <data name="AdvertismentType_CncLathe" xml:space="preserve">
+    <value>تراش سی ان سی</value>
+  </data>
+  <data name="AdvertismentType_CncMilling" xml:space="preserve">
+    <value>فرز سی ان سی</value>
+  </data>
+  <data name="AdvertismentType_Drill" xml:space="preserve">
+    <value>دریل</value>
+  </data>
+  <data name="AdvertismentType_FlatStone" xml:space="preserve">
+    <value>سنگ تخت</value>
+  </data>
+  <data name="AdvertismentType_Machinery" xml:space="preserve">
+    <value>آگهی عادی</value>
+  </data>
+  <data name="AdvertismentType_ManualMilling" xml:space="preserve">
+    <value>فرز دستی</value>
+  </data>
+  <data name="AdvertismentType_None" xml:space="preserve">
+    <value />
+  </data>
+  <data name="AdvertismentType_NormalCarousel" xml:space="preserve">
+    <value>کاروسل معمولی</value>
+  </data>
+  <data name="AdvertismentType_NormalLathe" xml:space="preserve">
+    <value>تراش معمولی</value>
+  </data>
+  <data name="Milling" xml:space="preserve">
+    <value>فرز</value>
+  </data>
+  <data name="String1" xml:space="preserve">
+    <value>AdvertismentType
+    {
+        None,
+        NormalLathe,
+        CncLathe,
+        NormalCarousel,
+        FlatStone,
+        CncMilling,
+        ManualMilling,
+        Drill,</value>
+  </data>
+  <data name="InvalidStringLength" xml:space="preserve">
+    <value>طول متن وارد شده مجاز نمی باشد</value>
+  </data>
+  <data name="MsgStringMaxLength" xml:space="preserve">
+    <value>حداکثر طول متن {0}  {1} حرف می باشد</value>
+  </data>
+  <data name="AdvertiserNote" xml:space="preserve">
+    <value>یادداشت</value>
+  </data>
+  <data name="MsgCellphoneIsAlreadyRegistered" xml:space="preserve">
+    <value>شماره موبایلی که وارد کرده‌اید قابل استفاده نیست. لطفا از یک شماره موبایل دیگر استفاده کنید</value>
+  </data>
+  <data name="Cellphone" xml:space="preserve">
+    <value>موبایل</value>
+  </data>
+  <data name="InvalidCellphone" xml:space="preserve">
+    <value>شماره موبایل نامعتبر است</value>
+  </data>
+</root>

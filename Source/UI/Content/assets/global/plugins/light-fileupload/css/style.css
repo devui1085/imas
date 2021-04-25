@@ -1,0 +1,135 @@
+﻿
+#FormContent
+{
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+
+.fileinput-button
+{
+	position: relative;
+	overflow: hidden;
+}
+
+	.fileinput-button input
+	{
+		position: absolute;
+		top: 0;
+		right: 0;
+		margin: 0;
+		opacity: 0;
+		filter: alpha(opacity=0);
+		transform: translate(-300px, 0) scale(4);
+		font-size: 23px;
+		direction: ltr;
+		cursor: pointer;
+	}
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle
+{
+	margin-bottom: 5px;
+}
+
+.fileupload-buttonbar .btn,
+.fileupload-buttonbar .toggle
+{
+	margin-bottom: 5px;
+}
+
+.info
+{
+	font-family: arial;
+	font-size: 15px;
+	font-weight: bold;
+	margin-bottom: 8px;
+    padding-right:10px;
+}
+
+.InfoContainer
+{
+	background-color: #F0F0F0;
+    padding: 10px;
+}
+
+
+.CustomProgress
+{
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#Container
+{
+	/*width: 30%;*/
+	margin-bottom: 2%;
+	margin-top: 2%;
+
+
+}
+
+.Error
+{
+	color: red;
+	font-weight: bold;
+}
+
+#Main
+{
+	margin-left: auto;
+	margin-right: auto;
+	width: 90%;
+	/*background-color: #b0e0e6;*/
+}
+
+.thumb {
+    max-width: 100%;
+    height: 180px;
+    border: 1px solid #000;
+    margin: 1px 5px 10px 2px;
+}
+
+.drop_zone
+{
+	border: 2px dashed #bbb;
+	border-radius: 5px;
+	color: #bbb;
+	padding: 25px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+.hover
+{
+	border: 2px solid #000;
+	border-radius: 5px;
+	color: #bbb;
+	padding: 25px;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#close_btn
+{
+	background: url("../Images/close_btn.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+	border: 0 none;
+	float: right;
+	height: 31px;
+	width: 40px;
+}
+
+
+.app-btn-block {
+    margin: 6px;
+    max-width: 285px;
+}
+
+.infoContainer-server {
+    background-color: #aaf9a8;
+}
+
+.file-size{
+    direction:ltr;
+    text-align:right;
+}

@@ -1,0 +1,88 @@
+﻿@model IMAS.UI.Areas.User.ViewModels.Advertisment.AdvertismentViewModel
+@using IMAS.PresentationModel.Model.Advertisment
+@using IMAS.UI.Infrastructure.ExtensionMethod
+@using IMAS.Localization.ExtensionMethod;
+@using IMAS.UI.Classes;
+@{
+    var AdvertismentTypeName = Model.Advertisment.GetType().Name.Replace("PM", string.Empty);
+    ViewBag.Title = AdvertismentTypeName.Localize();
+}
+
+    @Html.Partial("_ZwMediaBrowserPopup")
+
+<form id="mainForm" novalidate class="validatable-form">
+    @Html.HiddenFor(model => model.Advertisment.Id)
+    @Html.HiddenFor(model =>model.PageMode)
+    @Html.Hidden("AdvertismentTypeName", AdvertismentTypeName)
+    <div class="form-body">
+
+                <div class="portlet light bordered">
+                    <div class="portlet-body form" style="display: block;">
+                        <div class="tabbable-line">
+                            <ul class="nav nav-tabs ">
+                                <li class="active">
+                                    <a href="#tab_15_1" data-toggle="tab" aria-expanded="true"> مشخصات کلی </a>
+                                </li>
+                                @if (AdvertismentTypeName != "Machinery")
+                                {
+                                <li class="">
+                                    <a href="#tab_15_2" data-toggle="tab" aria-expanded="false"> مشخصات فنی </a>
+                                </li>
+                                }
+                                <li class="">
+                                    <a href="#tab_15_3" data-toggle="tab" aria-expanded="false"> تصاویر </a>
+                                </li>
+                            </ul>
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="tab_15_1">
+                                    @Html.Partial("EditMachinery", Model.Advertisment)
+                                  </div>
+                                @if (AdvertismentTypeName != "Machinery")
+                                {
+                                <div class="tab-pane" id="tab_15_2">
+                                    @Html.Partial("Edit" + AdvertismentTypeName, Model.Advertisment)
+                                </div>
+                                }
+                                <div class="tab-pane" id="tab_15_3">
+                                 @Html.Partial("ImageUploader")
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        </div>
+    </div>
+</form>
+
+@section PageBreadcrumb{
+    <li>
+        <i class="icon-home"></i>
+        <span>@AdvertismentTypeHelper.GetAdvertismentCategory(AdvertismentTypeName).Localize()</span>
+        <i class="fa fa-angle-left"></i>
+    </li>
+    <li>
+        <span>@AdvertismentTypeName.Localize()</span>
+    </li>
+}
+
+@section PageActionsMenu{
+    <button type="button" class="btn btn-fit-height gray-salt save-button" onclick="zw.page.onSaveClick()">
+        ذخیره
+    </button>
+}
+
+
+
+@section ComponentScripts{
+  
+}
+
+@section PageScripts{
+  @Scripts.Render("~/user-area-advertisment-edit-scripts")
+}
+
+@section Head{
+   @Styles.Render("~/user-area-advertisment-edit-styles")
+}
+
+
+

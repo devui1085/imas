@@ -1,0 +1,181 @@
+﻿@using IMAS.UI.ViewModels.Publication
+@{
+    var publication = ViewBag.Publication as PublicationViewModelBase;
+    var pageTitle = publication != null ? publication.Title : "طاها سی ان سی";
+    var viewPublication = publication != null;
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="fa" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="fa" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fa" dir="rtl">
+<!--<![endif]-->
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-110959748-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-110959748-1');
+    </script>
+    <title>
+        @if (viewPublication) {
+            @(string.IsNullOrEmpty(ViewBag.Title) ?
+                publication.Title :
+                string.Format("{0} - {1}", ViewBag.Title, publication.Title))
+        }
+        else {
+            @(string.IsNullOrEmpty(ViewBag.Title) ?
+                "طاها سی ان سی" :
+                string.Format("{0}", ViewBag.Title))
+        }
+    </title>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    @Styles.Render("~/content/assets/global/plugins/(font_Icon_Bootstrap)", "~/visitor-area-styles")
+    @RenderSection("Head", false)
+    <link rel="shortcut icon" href="~/content/assets/global/img/logo.ico"/>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+</head>
+
+<body class="page-container-bg-solid page-md">
+    <div class="page-header">
+        <div class="page-header-top">
+            <div class="container">
+                <div class="page-logo">
+                    <div id="logo" class="float-right">
+                        <a href="/">
+                            <img src="/content/assets/layouts/layout3/img/logo-default.png" alt="طاها سی ان سی" class="logo-default">
+                        </a>
+                    </div>
+                    <div id="name" class="float-right">
+                        <h1> <span class="number-fa">@pageTitle</span></h1>
+                      
+                    </div>
+                    <div class="float-right">
+                        <h1> <span ><a id="cellphone" target="_blank" href="https://t.me/CNCMACHINES">https://t.me/CncMachines</a></span></h1>
+                    </div>
+                </div>
+                <a href="javascript:;" class="menu-toggler"></a>
+                @if (User != null) {
+                    @Html.Partial("_AuthenticatedUserTopMenu")
+                }
+                else {
+                    @Html.Partial("_GuestTopMenu")
+                }
+            </div>
+        </div>
+        <div class="page-header-menu">
+            <div class="container">
+                <form class="search-form" action="/search/">
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="جستجوی سریع" name="title" value="@(ViewBag.SearchKeyword)">
+                        <span class="input-group-btn">
+                            <a href="javascript:;" class="btn submit">
+                                <i class="icon-magnifier"></i>
+                            </a>
+                        </span>
+                    </div>
+                </form>
+                 @*DOC: Apply "hor-menu-light" class after the "hor-menu" class below to have a horizontal menu with white background*@ 
+                 @*DOC: Remove data-hover="dropdown" and data-close-others="true" attributes below to disable the dropdown opening on mouse hover*@ 
+                <div class="hor-menu">
+                    <ul class="nav navbar-nav">
+                        @if (viewPublication) {
+                            @Html.Partial("_BlogHorizontalMenu", publication as IMAS.UI.ViewModels.Blog.BlogPageViewModelBase);
+                        }
+                        else {
+                            @Html.Partial("_HorizontalMenu");
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-container">
+        <div class="page-content-wrapper">
+            @RenderSection("PageHead", false)
+            <div class="page-content">
+                <div class="container">
+                    @RenderSection("PageBreadcrumb", false)
+                    <div class="page-content-inner">
+                        @RenderBody()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    @if (!viewPublication) {
+        <div class="page-prefooter">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>طاها سی ان سی</h2>
+                        <p>ثبت آگهی خرید و فروش دستگاه های صنعتی</p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs12 footer-block">
+                        <h2>پیوند‌ها</h2>
+                        <p>
+                            <a class="site-links"  href="@Url.RouteUrl("AdvertismentList", new { pageIndex = 1})">لیست آگهی ها</a>
+                        </p>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>ما را دنبال کنید</h2>
+                        <ul class="social-icons">
+                            <li>
+                             @*   <a href="#" rel="nofollow" data-original-title="linkedin" class="linkedin"></a>*@
+                            </li>
+                            <li>
+                                <a href="https://t.me/CNCMACHINES" rel="nofollow" data-original-title="telegram" class="telegram">تلگرام</a>
+                            </li>
+                            <li>
+                             @*   <a href="#" rel="nofollow" data-original-title="twitter" class="twitter"></a>*@
+                            </li>
+                            <li>
+                                @*<a href="#" rel="nofollow" data-original-title="facebook" class="facebook"></a>*@
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3 col-sm-6 col-xs-12 footer-block">
+                        <h2>تماس با ما</h2>
+                        <address class="margin-bottom-10">
+                            <a href="tel:09120120520" target="_blank" rel="nofollow"> <span>تلفن</span></a>
+                        </address>
+                        <address class="margin-bottom-10">
+                            <a href="https://t.me/cnctaha" target="_blank" rel="nofollow"> <span>تلگرام</span></a>
+                        </address>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="page-footer">
+            <div class="container">
+                <a href="~/about" rel="nofollow">درباره ما</a><span>|</span>
+                <a href="~/terms" rel="nofollow">شرایط استفاده</a><span>|</span>
+                <a href="~/privacy" rel="nofollow">حریم شخصی</a><span>|</span>
+                <a href="~/faq" rel="nofollow">پرسش های متداول</a>
+            </div>
+        </div>
+    }
+
+    <div class="scroll-to-top">
+        <i class="icon-arrow-up"></i>
+    </div>
+    <!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+    @Scripts.Render("~/visitor-area-scripts")
+    @*@if (User != null)
+    {
+        <script src="~/Scripts/jquery.signalR-2.2.1.min.js"></script>
+        <script src="/signalr/hubs"></script>
+    }*@
+    @RenderSection("ComponentScripts", false)
+  @*  @Scripts.Render("~/content/assets/global/scripts/IMAS.js")*@
+    @RenderSection("PageScripts", false)
+</body>
+</html>

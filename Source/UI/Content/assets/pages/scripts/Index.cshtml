@@ -1,0 +1,65 @@
+﻿@model IMAS.UI.ViewModels.Home.HomeViewModel
+@{
+    ViewBag.Title = "";
+    ViewBag.ActiveMenu = "Home";
+}
+
+<div class="row">
+    <div class="col-lg-12">
+        <div class="portlet light">
+            <div class="portlet-title">
+                <div class="caption">
+                   جدیدترین آگهی ها
+                </div>
+            </div>
+  
+            <div class="container-fluid">
+
+                <div id="products" class="row list-group">
+                    @foreach (var advertisment in Model.LatestAdvertisments)
+                    {
+                        <div class="item  col-sm-4 ">
+                            <div class="thumbnail">
+                                <img class="group list-group-image" src='@("/AdImages/Pic400x250/" + (advertisment.FistImageName ?? "default")+ ".png")' alt="" />
+                                <div class="caption number-fa">
+                                    <h4 class="group inner list-group-item-heading">
+                                        @advertisment.Title
+                                    </h4>
+                                    <h5 class="group inner list-group-item-text">
+                                        @advertisment.RegisterDateString
+                                    </h5>
+                                    
+                                    <div class="row">
+                                        <div class="col-xs-12 col-md-6">
+                                            <p class="lead">
+                                                @*@(((IMAS.PresentationModel.Model.Advertisment.MachineryPM)advertisment).Price)*@
+                                            </p>
+                                        </div>
+                                        <div class="col-sm-12">
+                                            <a class="btn btn-primary btn-lg btn-block" href="~/advertisment/@advertisment.Id">مشاهده آگهی</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+@section PageScripts {
+}
+
+@section Head {
+    <meta name="description" content="ثبت آگهی خرید و فروش دستگاه های صنعتی" />
+    <link href="~/Content/assets/pages/css/visitor_home_index.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/plugins/ListGridView/css/style.css" rel="stylesheet" />
+    <link href="~/Content/assets/global/plugins/ListGridView/css/jquery-mobile.css" rel="stylesheet" />
+    }
+
+@section PageHead {}
+
+@section PageBreadcrumb {}

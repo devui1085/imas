@@ -1,0 +1,211 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.NormalLathePM
+<div class="portlet light ">
+    @*<div class="portlet-title">
+            <div class="caption">
+                <i class="icon-settings font-dark"></i>
+                <span class="caption-subject font-dark sbold uppercase">Horizontal Form</span>
+            </div>
+            <div class="actions">
+                <div class="btn-group btn-group-devided" data-toggle="buttons">
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                        <input type="radio" name="options" class="toggle" id="option1">Actions
+                    </label>
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                        <input type="radio" name="options" class="toggle" id="option2">Settings
+                    </label>
+                </div>
+            </div>
+        </div>*@
+    <div class="portlet-body form">
+        <div class="form-horizontal" role="form">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RailsArePlated)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.RailsArePlated.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RulerMark)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.RulerMark
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MorghakDiagonal)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MorghakDiagonal
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasLapent)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasLapent.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MaximumDiameter)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MaximumDiameter
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MaximumMachiningLength)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MaximumMachiningLength
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleSpinsFrom)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.SpindleSpinsFrom @Html.LabelFor(model => model.SpindleSpinsTo) @Model.SpindleSpinsTo
+                    </div>
+                </div>
+               
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RulerMark)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.RulerMark
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.AxisMovementSpeedFrom)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.AxisMovementSpeedFrom  @Html.LabelFor(model => model.AxisMovementSpeedTo)  @Model.AxisMovementSpeedTo
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MetricScrewFrom)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MetricScrewFrom  @Html.LabelFor(model => model.MetricScrewTo)     @Model.MetricScrewTo
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.InkyScrewFrom)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.InkyScrewFrom  @Html.LabelFor(model => model.InkyScrewTo)  @Model.InkyScrewTo
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasSoapAndWaterSystem)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasSoapAndWaterSystem).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ThreeOrderDiameter)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ThreeOrderDiameter
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.FourOrderDiameter)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.FourOrderDiameter
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasRulerAndViewer)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasRulerAndViewer.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasMorghak)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasMorghak.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MorghakDisplacementLength)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MorghakDisplacementLength
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MaximumBorderDiameter)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MaximumBorderDiameter
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.BedWidth)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.BedWidth
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleSpinsNumber)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.SpindleSpinsNumber
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasThreeOrder)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasThreeOrder.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasFourOrder)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasFourOrder.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasLift)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasLift.ToString().Localize()
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

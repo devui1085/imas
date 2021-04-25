@@ -1,0 +1,177 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.CncMillingPM
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.AxisNumber, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.AxisNumber)
+            @Html.LabelFor(model => model.AxisNumber)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.TableWidth, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableWidth)
+            @Html.LabelFor(model => model.TableWidth)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.TableHeight, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableHeight)
+            @Html.LabelFor(model => model.TableHeight, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.TableType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableType)
+            @Html.LabelFor(model => model.TableType, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.BodyType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.BodyType)
+            @Html.LabelFor(model => model.BodyType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MainEngingePower, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MainEngingePower)
+            @Html.LabelFor(model => model.MainEngingePower)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.SpindleGearbox, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.SpindleGearbox)
+            @Html.LabelFor(model => model.SpindleGearbox, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.SpindleRound, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.SpindleRound)
+            @Html.LabelFor(model => model.SpindleRound)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasACAxisEngine, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasACAxisEngine)
+            @Html.LabelFor(model => model.HasACAxisEngine, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasDCAxisEngine, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasDCAxisEngine)
+            @Html.LabelFor(model => model.HasDCAxisEngine, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.EnginesMark, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.EnginesMark)
+            @Html.LabelFor(model => model.EnginesMark)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.EngineDriversMark, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.EngineDriversMark)
+            @Html.LabelFor(model => model.EngineDriversMark)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasBalanceWeight, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasBalanceWeight)
+            @Html.LabelFor(model => model.HasBalanceWeight, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasHydraulicBalanceSystem, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasHydraulicBalanceSystem)
+            @Html.LabelFor(model => model.HasHydraulicBalanceSystem, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.ToolsHolderType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.ToolsHolderType)
+            @Html.LabelFor(model => model.ToolsHolderType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.ToolsCountSimultaneousChange, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.ToolsCountSimultaneousChange)
+            @Html.LabelFor(model => model.ToolsCountSimultaneousChange)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasSoapWaterSystem, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasSoapWaterSystem)
+            @Html.LabelFor(model => model.HasSoapWaterSystem, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasToolCenterSoapWater, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasToolCenterSoapWater)
+            @Html.LabelFor(model => model.HasToolCenterSoapWater, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasFourthAxis, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasFourthAxis)
+            @Html.LabelFor(model => model.HasFourthAxis, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasClamp, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasClamp)
+            @Html.LabelFor(model => model.HasClamp, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasComputer, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasComputer)
+            @Html.LabelFor(model => model.HasComputer, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HasAirPump, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HasAirPump)
+            @Html.LabelFor(model => model.HasAirPump, new { @class = "control-label" })
+        </div>
+    </div>
+</div>

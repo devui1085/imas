@@ -1,0 +1,144 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.MachineryPM
+<div class="portlet light ">
+    @*<div class="portlet-title">
+            <div class="caption">
+                <i class="icon-settings font-dark"></i>
+                <span class="caption-subject font-dark sbold uppercase">Horizontal Form</span>
+            </div>
+            <div class="actions">
+                <div class="btn-group btn-group-devided" data-toggle="buttons">
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                        <input type="radio" name="options" class="toggle" id="option1">Actions
+                    </label>
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                        <input type="radio" name="options" class="toggle" id="option2">Settings
+                    </label>
+                </div>
+            </div>
+        </div>*@
+    <div class="portlet-body form number-fa">
+        <div class="form-horizontal" role="form">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="col-md-2 form-lable ">
+                        @Html.LabelFor(model => model.Title)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.Title
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.Model)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.Model
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.ManufacturingCountry)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("Country_" + Model.ManufacturingCountry).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.ManufacturingFactory)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.ManufacturingFactory
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.ConstructionYear)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.ConstructionYear
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.Width)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.Width
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.Length)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.Length
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.Height)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.Height
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.Wieght)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.Wieght
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.MaxWorkPieceWeight)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @Model.MaxWorkPieceWeight
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.HealthStatus)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @(("HealthStatus_" + Model.HealthStatus).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.PriceValue)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @string.Format("{0:n0}", Model.Price)
+                    </div>
+                </div>
+                @if (User !=null && Model.UserId == User.UserId)
+                {
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => Model.AdvertiserNote)
+                    </div>
+
+                    <div class="col-md-10 form-field">
+                        @string.Format("{0:n0}", Model.AdvertiserNote)
+                    </div>
+                </div>
+                }
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,14 @@
+﻿@model List<string>
+
+<div class="container center empty-div" id="picture-list">
+    @foreach (var picture in Model)
+    {
+        <div class="row">
+            <br />
+            <div class="col-md-8">
+                <img class="img-responsive" src='@("/AdImages/Main/"+picture +".png")' alt="تصویر آگهی">
+            </div>
+        </div>
+        <br />
+    }
+</div>

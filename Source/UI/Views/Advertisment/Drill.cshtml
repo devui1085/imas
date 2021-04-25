@@ -1,0 +1,113 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.DrillPM
+<div class="portlet light ">
+    <div class="portlet-body form">
+        <div class="form-horizontal" role="form">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.DrillType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("DrillType_" + Model.DrillType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.DiameterDrillMaxAllowed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.DiameterDrillMaxAllowed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.Morse)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.Morse
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MaxDistanceFromColumn)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MaxDistanceFromColumn
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MaxDistanceFromTable)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MaxDistanceFromTable
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.NumberOfSpindleSpeeds)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.NumberOfSpindleSpeeds
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.GearboxType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("GearboxType_" + Model.GearboxType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MillerCapability)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.MillerCapability.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HoleType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HoleType_" + Model.HoleType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ColumnHeadDiameter)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ColumnHeadDiameter
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RotatingTable)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.RotatingTable.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.TableMaxRotation)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.TableMaxRotation
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.CoolingPump)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.CoolingPump.ToString().Localize()
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

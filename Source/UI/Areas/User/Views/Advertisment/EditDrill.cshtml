@@ -1,0 +1,128 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.DrillPM
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.DrillType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.DrillType)
+            @Html.LabelFor(model => model.DrillType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.DiameterDrillMaxAllowed, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.DiameterDrillMaxAllowed)
+            @Html.LabelFor(model => model.DiameterDrillMaxAllowed)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.Morse, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.Morse)
+            @Html.LabelFor(model => model.Morse, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MaxDistanceFromColumn, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MaxDistanceFromColumn)
+            @Html.LabelFor(model => model.MaxDistanceFromColumn, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.MaxDistanceFromTable, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MaxDistanceFromTable)
+            @Html.LabelFor(model => model.MaxDistanceFromTable, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.TableWidth, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableWidth)
+            @Html.LabelFor(model => model.TableWidth)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.TableHeight, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableHeight)
+            @Html.LabelFor(model => model.TableHeight)
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.NumberOfSpindleSpeeds, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.NumberOfSpindleSpeeds)
+            @Html.LabelFor(model => model.NumberOfSpindleSpeeds)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.GearboxType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.GearboxType)
+            @Html.LabelFor(model => model.GearboxType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.MillerCapability, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.MillerCapability)
+            @Html.LabelFor(model => model.MillerCapability, new { @class = "control-label" })
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.HoleType, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.HoleType)
+            @Html.LabelFor(model => model.HoleType, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.ColumnHeadDiameter, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.ColumnHeadDiameter)
+            @Html.LabelFor(model => model.ColumnHeadDiameter)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.RotatingTable, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.RotatingTable)
+            @Html.LabelFor(model => model.RotatingTable, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.TextBoxFor(model => model.TableMaxRotation, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.TableMaxRotation)
+            @Html.LabelFor(model => model.TableMaxRotation)
+        </div>
+    </div>
+</div>
+<div class="row">
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+            @Html.LocalizedEnumDropDownListFor(model => model.CoolingPump, true, null, new { @class = "form-control" })
+            @Html.ValidationMessageFor2(model => model.CoolingPump)
+            @Html.LabelFor(model => model.CoolingPump, new { @class = "control-label" })
+        </div>
+    </div>
+    <div class="col-lg-6 col-md-6 col-sm-6 col-xs-12">
+        <div class="form-group form-md-line-input form-md-floating-label">
+    
+        </div>
+    </div>
+</div>
+

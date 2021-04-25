@@ -1,0 +1,222 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.CncLathePM
+<div class="portlet light ">
+    <div class="portlet-body form">
+        <div class="form-horizontal" role="form">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ControlStatus)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HealthStatus_" + Model.ControlStatus).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.LatheType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("LatheType_"+ Model.LatheType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RailType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("RailType_" + Model.RailType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasXAxis)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasXAxis).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XAxisTableType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("TableType_" + Model.XAxisTableType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XAxisMovementFeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.XAxisMovementFeed
+                    </div>
+                </div>   
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XAxisSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.XAxisSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasYAxis)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasYAxis).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YAxisTableType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("TableType_" + Model.YAxisTableType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YAxisMovementFeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.YAxisMovementFeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YAxisSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.YAxisSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasZAxis)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasZAxis.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZAxisTableType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("TableType_" + Model.ZAxisTableType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZAxisMovementFeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ZAxisMovementFeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZAxisSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ZAxisSpeed
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleRoundPerMinute)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.SpindleRoundPerMinute
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleHasGearbox)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.SpindleHasGearbox).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasAcEngine)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasAcEngine).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasDcEngine)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasDcEngine).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasOtherEngine)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasOtherEngine).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.EngineMarks)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.EngineMarks
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.DriveMarks)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.DriveMarks
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ToolChangerType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("ToolChangerType_" + Model.ToolChangerType).Localize())
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ToolsNumber)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ToolsNumber
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.AliveToolsNumber)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.AliveToolsNumber
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasSoapAndWaterSystem)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasSoapAndWaterSystem).Localize())
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -1,0 +1,74 @@
+﻿@{
+}
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8 no-js"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9 no-js"> <![endif]-->
+<!--[if !IE]><!-->
+<html lang="fa" dir="rtl">
+<head>
+    <title>@(string.IsNullOrEmpty(ViewBag.Title) ? "طاها سی ان سی" : string.Format("{0} - {1}", ViewBag.Title, "طاها سی ان سی"))</title>
+    @*<link rel="shortcut icon" href="~/content/assets/global/img/logo.ico" />*@
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+    <meta content="" name="description" />
+    <meta content="" name="author" />
+    @Styles.Render("~/content/assets/global/plugins/(font_Icon_Bootstrap)", "~/visitor-signin-layout-styles")
+
+    @RenderSection("Head", false)
+</head>
+
+<body class="login">
+    <div class="user-login-5">
+        <div class="row bs-reset">
+            <div class="col-md-3"></div>
+            <div class="col-md-6 login-container bs-reset">
+                <div class="page-header-menu" style="display: block;">
+                    <div class="container">
+                        <div class="hor-menu">
+                            <ul class="nav navbar-nav">
+                                <li>
+                                    @*<a href="/">
+                                        بازگشت به صفحه اصلی
+                                    </a>*@
+                                    <br />
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="center-block">
+                    @RenderBody()
+                </div>
+                <div class="login-footer">
+                    <div class="row bs-reset">
+                        <div class="col-xs-7 bs-reset">
+                            <ul class="login-social">
+                                @RenderSection("FooterItems", false)
+                            </ul>
+                        </div>
+                        <div class="col-xs-5 bs-reset">
+                            <div class="login-copyright text-right">
+                                <p>طاها سی ان سی - ۱۳۹۷</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    </div>
+
+    <!--[if lt IE 9]>
+    <script src="../assets/global/plugins/respond.min.js"></script>
+    <script src="../assets/global/plugins/excanvas.min.js"></script>
+    <![endif]-->
+   @Scripts.Render("~/signin-layout-scripts")
+    @RenderSection("ComponentScripts", false)
+    @RenderSection("PageScripts", false)
+
+    <script src="~/Content/assets/global/scripts/google.js"></script>
+</body>
+</html>

@@ -1,0 +1,104 @@
+﻿@model IMAS.PresentationModel.Model.ContactInfoPM
+<div class="profile">
+        <div class="row">
+            <div class="col-md-3">
+                <ul class="list-unstyled profile-nav">
+                    <li>
+                        <img src="/visitorservice/getprofileimage/@(Model.ContactId)/large" class="img-responsive pic-bordered" alt="تصویر پروفایل">
+                        @*<a href="javascript:;" class="profile-edit"> edit </a>*@
+                    </li>
+                </ul>
+                <div class="portlet light margin-top-10 padding-5px">
+                    <div>
+                        @if (!string.IsNullOrWhiteSpace(Model.WebSiteUrl))
+                        {
+                            <div class="margin-top-10 profile-desc-link">
+                                <i class="fa fa-globe font-blue"></i>
+                                <a href="@Model.WebSiteUrl" rel="nofollow" target="_blank">
+                                    وب سایت
+                                </a>
+                            </div>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(Model.LinkedInUrl))
+                        {
+                            <div class="margin-top-10 profile-desc-link">
+                                <i class="fa fa-linkedin font-blue"></i>
+                                <a href="@Model.LinkedInUrl" rel="nofollow" target="_blank">
+                                    لینکدین
+                                </a>
+                            </div>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(Model.FacebookUrl))
+                        {
+
+                            <div class="margin-top-10 profile-desc-link">
+                                <i class="fa fa-facebook font-blue"></i>
+                                <a href="@Model.FacebookUrl" rel="nofollow" target="_blank">
+                                    فیسبوک
+                                </a>
+                            </div>
+                        }
+                        @if (!string.IsNullOrWhiteSpace(Model.TwitterUrl))
+                        {
+                            <div class="margin-top-10 profile-desc-link">
+                                <i class="fa fa-twitter font-blue"></i>
+                                <a href="@Model.TwitterUrl" rel="nofollow" target="_blank">
+                                    توییتر
+                                </a>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <div class="row margin-top-10">
+                    <div class="col-md-8 profile-info">
+                        <h1 class="font-blue-chambray">@Model.FullName</h1>
+                        @if (!string.IsNullOrEmpty(Model.AboutMe))
+                        {
+                            <p>@Html.Raw(Model.AboutMe.Replace(System.Environment.NewLine, "<br/>"))</p>
+                        }
+                        <p>
+                            <a href="@Model.WebSiteUrl" rel="nofollow" target="_blank">@Model.WebSiteUrl</a>
+                        </p>
+                        @*<ul class="list-inline">
+                            <li title="تاریخ عضویت">
+                                <i class="fa fa-calendar"></i>
+                                <span class="number-fa">@Model.RegistrationDateString</span>
+                            </li>
+                        </ul>*@
+                    </div>
+                    <!--end col-md-8-->
+                    <div class="col-md-4">
+                        <div class="portlet sale-summary">
+                            <div class="portlet-title">
+                                <div class="caption font-blue-chambray">اطلاعات تماس</div>
+                            </div>
+                            <div class="portlet-body">
+                                <ul class="list-unstyled">
+                                    <li>
+                                        <span class="sale-info">
+                                            <i class="fa fa-mobile fa-lg"></i>
+                                        </span>
+                                        <span class="sale-num number-fa">
+                                            <a href="tel:@Model.MobileNumber">@(Model.MobileNumber ?? User.Cellphone)</a>
+                                        </span>
+                                    </li>
+                                    <li>
+                                        <span class="sale-info">
+                                            <i class="fa fa-phone fa-lg"></i>
+                                        </span>
+                                        <span class="sale-num  number-fa">
+                                            <a href="tel:@Model.Tel">@Model.Tel</a>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <!--end col-md-4-->
+                </div>
+            </div>
+        </div>
+
+    </div>

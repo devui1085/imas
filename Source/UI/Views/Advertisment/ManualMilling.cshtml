@@ -1,0 +1,218 @@
+﻿@model IMAS.PresentationModel.Model.Advertisment.ManualMillingPM
+<div class="portlet light ">
+    @*<div class="portlet-title">
+            <div class="caption">
+                <i class="icon-settings font-dark"></i>
+                <span class="caption-subject font-dark sbold uppercase">Horizontal Form</span>
+            </div>
+            <div class="actions">
+                <div class="btn-group btn-group-devided" data-toggle="buttons">
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm active">
+                        <input type="radio" name="options" class="toggle" id="option1">Actions
+                    </label>
+                    <label class="btn btn-transparent dark btn-outline btn-circle btn-sm">
+                        <input type="radio" name="options" class="toggle" id="option2">Settings
+                    </label>
+                </div>
+            </div>
+        </div>*@
+    <div class="portlet-body form">
+        <div class="form-horizontal" role="form">
+            <div class="form-body">
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.TableWidth)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.TableWidth
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.TableHeight)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.TableHeight
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XCourse)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.XCourse
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XCourseMinSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.XCourseMinSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.XCourseMaxSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.XCourseMaxSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YCourse)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.YCourse
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YCourseMinSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.YCourseMinSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.YCourseMaxSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.YCourseMaxSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZCourse)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ZCourse
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZCourseMinSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ZCourseMinSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.ZCourseMaxSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.ZCourseMaxSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasMeterFunctionality)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasMeterFunctionality.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.LubricationType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("LubricationType_" + Model.LubricationType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasSoapWaterPump)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasSoapWaterPump.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.MillingRailType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("MillingRailType_" + Model.MillingRailType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.RailsHealthStatus)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("RailsHealthStatus_" + Model.RailsHealthStatus).Localize())
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasLEDLighting)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasLEDLighting.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasToolbox)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasToolbox.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.AxisType)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("AxisType_" + Model.AxisType).Localize())
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleMaxSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.SpindleMaxSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.SpindleMinSpeed)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.SpindleMinSpeed
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasDrillCapability)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasDrillCapability.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasRulerAndDRO)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @Model.HasRulerAndDRO.ToString().Localize()
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="col-md-2 form-lable">
+                        @Html.LabelFor(model => model.HasClamp)
+                    </div>
+                    <div class="col-md-10 form-field">
+                        @(("HavingEnum_" + Model.HasClamp).Localize())
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
